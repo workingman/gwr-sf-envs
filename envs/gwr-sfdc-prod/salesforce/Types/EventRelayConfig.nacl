@@ -1,0 +1,229 @@
+type salesforce.EventRelayConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string destinationResourceName {
+  }
+  string eventChannel {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AccountChangeEvent",
+        "AccountContactRoleChangeEvent",
+        "ActivityEngagementVirtualChannel",
+        "AssetChangeEvent",
+        "AssetTechnicalAttributesCDCEventChannel",
+        "AssignedResourceChangeEvent",
+        "AuthorizationFormConsentChangeEvent",
+        "BriefcaseAssignmentChangeEvent",
+        "BriefcaseDefinitionChangeEvent",
+        "CampaignChangeEvent",
+        "CampaignMemberChangeEvent",
+        "CampaignMemberStatusChangeEvent",
+        "CartDeliveryGroupChangeEvent",
+        "CartItemChangeEvent",
+        "CartItemPriceAdjustmentChangeEvent",
+        "CartRelatedItemChangeEvent",
+        "CartTaxChangeEvent",
+        "CartValidationOutputChangeEvent",
+        "CaseChangeEvent",
+        "CaseRelatedIssueChangeEvent",
+        "ChangeDataCaptureDiffeoStandard",
+        "ChangeDataStandardSales",
+        "ChangeEvents",
+        "ChangeRequestChangeEvent",
+        "ChangeRequestRelatedIssueChangeEvent",
+        "ChangeRequestRelatedItemChangeEvent",
+        "CommSubscriptionConsentChangeEvent",
+        "CommerceChangeEvents",
+        "CommerceSearchIncrementalIndex",
+        "ConsentCDCChannel",
+        "ConsentCDCStandardChannel",
+        "ContactChangeEvent",
+        "ContactPointAddressChangeEvent",
+        "ContactPointConsentChangeEvent",
+        "ContactPointEmailChangeEvent",
+        "ContactPointPhoneChangeEvent",
+        "ContactPointTypeConsentChangeEvent",
+        "ContentDocumentChangeEvent",
+        "ContentDocumentLinkChangeEvent",
+        "ContentVersionChangeEvent",
+        "ContractChangeEvent",
+        "ContractLineItemChangeEvent",
+        "ConversationIntelligenceVirtualChannel",
+        "CreChangeEvents",
+        "DataCloudEntities",
+        "EinsteinDiscoveryWBChannel",
+        "EinsteinPlatformStandardChannel",
+        "EmailMessageChangeEvent",
+        "EmailTemplateChangeEvent",
+        "EntitlementChangeEvent",
+        "EventBusRelayChangeEventChannel",
+        "EventChangeEvent",
+        "EventRelationChangeEvent",
+        "EventRelayConfigChangeEvent",
+        "FTestStandardChannel",
+        "FTestStandardInternalChannel",
+        "FinanceBalanceSnapshotChangeEvent",
+        "FinanceTransactionChangeEvent",
+        "FlowBuilderChangeData",
+        "FlowRecordChangeListenerChannel",
+        "GlobalIdentityStandard",
+        "HighVolumePriming",
+        "IncidentChangeEvent",
+        "IncidentRelatedItemChangeEvent",
+        "IndividualChangeEvent",
+        "IsotopeStandardChangeEvents",
+        "LeadChangeEvent",
+        "LearningItemProgress",
+        "ListEmailChangeEvent",
+        "ListEmailSentResultChangeEvent",
+        "LocationChangeEvent",
+        "MacroChangeEvent",
+        "MacroInstructionChangeEvent",
+        "ManagedContentVariantChangeEvent",
+        "Merchandising",
+        "OperatingHoursChangeEvent",
+        "OpportunityChangeEvent",
+        "OpportunityContactRoleChangeEvent",
+        "OrderChangeEvent",
+        "OrderItemChangeEvent",
+        "PardotSyncStdChannel",
+        "PartyConsentChangeEvent",
+        "PendingOrderSummaryChangeEvent",
+        "Pricebook2ChangeEvent",
+        "PricebookEntryChangeEvent",
+        "ProblemChangeEvent",
+        "ProblemIncidentChangeEvent",
+        "ProblemRelatedItemChangeEvent",
+        "Product2ChangeEvent",
+        "ProductAttributeChangeEvent",
+        "QuickTextChangeEvent",
+        "RecommendationChangeEvent",
+        "RecommendationReactionChangeEvent",
+        "ResourceAbsenceChangeEvent",
+        "ResourcePreferenceChangeEvent",
+        "ReturnOrderChangeEvent",
+        "ReturnOrderLineItemChangeEvent",
+        "ServiceAppointmentChangeEvent",
+        "ServiceContractChangeEvent",
+        "ServiceResourceChangeEvent",
+        "ServiceResourceSkillChangeEvent",
+        "ServiceTerritoryChangeEvent",
+        "ServiceTerritoryMemberChangeEvent",
+        "ShiftChangeEvent",
+        "SkillChangeEvent",
+        "SkillRequirementChangeEvent",
+        "SlackAlertsEventChannel",
+        "TaskChangeEvent",
+        "TaskRelationChangeEvent",
+        "TimeSlotChangeEvent",
+        "UserChangeEvent",
+        "VideoCall",
+        "WebCartAdjustmentBasisChangeEvent",
+        "WebCartAdjustmentGroupChangeEvent",
+        "WebCartChangeEvent",
+        "WebStoreChangeEvent",
+        "WorkOrderChangeEvent",
+        "WorkOrderLineItemChangeEvent",
+        "WorkPlanChangeEvent",
+        "WorkPlanTemplateChangeEvent",
+        "WorkPlanTemplateEntryChangeEvent",
+        "WorkPlansCDCEventChannel",
+        "WorkStepChangeEvent",
+        "WorkStepTemplateChangeEvent",
+        "WorkTypeChangeEvent",
+        "npe01__Contacts_And_Orgs_Settings__ChangeEvent",
+        "npe01__OppPayment__ChangeEvent",
+        "npe01__Payment_Field_Mapping_Settings__ChangeEvent",
+        "npe03__Custom_Field_Mapping__ChangeEvent",
+        "npe03__Custom_Installment_Settings__ChangeEvent",
+        "npe03__Recurring_Donation__ChangeEvent",
+        "npe03__Recurring_Donations_Settings__ChangeEvent",
+        "npe4__Relationship_Auto_Create__ChangeEvent",
+        "npe4__Relationship_Error__ChangeEvent",
+        "npe4__Relationship_Lookup__ChangeEvent",
+        "npe4__Relationship_Settings__ChangeEvent",
+        "npe4__Relationship__ChangeEvent",
+        "npe5__Affiliation__ChangeEvent",
+        "npe5__Affiliations_Settings__ChangeEvent",
+        "npo02__Household__ChangeEvent",
+        "npo02__Households_Settings__ChangeEvent",
+        "npo02__Opportunity_Rollup_Error__ChangeEvent",
+        "npo02__User_Rollup_Field_Settings__ChangeEvent",
+        "npsp__Account_Soft_Credit__ChangeEvent",
+        "npsp__Addr_Verification_Settings__ChangeEvent",
+        "npsp__Address_Verification_Settings__ChangeEvent",
+        "npsp__Address__ChangeEvent",
+        "npsp__Allocation__ChangeEvent",
+        "npsp__Allocations_Settings__ChangeEvent",
+        "npsp__Batch_Data_Entry_Settings__ChangeEvent",
+        "npsp__Batch__ChangeEvent",
+        "npsp__Custom_Column_Header__ChangeEvent",
+        "npsp__Customizable_Rollup_Settings__ChangeEvent",
+        "npsp__DataImportBatch__ChangeEvent",
+        "npsp__DataImport__ChangeEvent",
+        "npsp__Data_Import_Settings__ChangeEvent",
+        "npsp__Engagement_Plan_Task__ChangeEvent",
+        "npsp__Engagement_Plan_Template__ChangeEvent",
+        "npsp__Engagement_Plan__ChangeEvent",
+        "npsp__Error_Settings__ChangeEvent",
+        "npsp__Error__ChangeEvent",
+        "npsp__Form_Template__ChangeEvent",
+        "npsp__Fund__ChangeEvent",
+        "npsp__General_Accounting_Unit__ChangeEvent",
+        "npsp__GetStartedCompletionChecklistState__ChangeEvent",
+        "npsp__Gift_Entry_Settings__ChangeEvent",
+        "npsp__Grant_Deadline__ChangeEvent",
+        "npsp__Household_Naming_Settings__ChangeEvent",
+        "npsp__Level__ChangeEvent",
+        "npsp__Levels_Settings__ChangeEvent",
+        "npsp__Opportunity_Naming_Settings__ChangeEvent",
+        "npsp__Package_Settings__ChangeEvent",
+        "npsp__Partial_Soft_Credit__ChangeEvent",
+        "npsp__RecurringDonationChangeLog__ChangeEvent",
+        "npsp__Relationship_Sync_Excluded_Fields__ChangeEvent",
+        "npsp__Schedulable__ChangeEvent",
+        "npsp__Trigger_Handler__ChangeEvent",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+      salesforce.PlatformEventChannel,
+    ]
+  }
+  string label {
+  }
+  string relayOption {
+  }
+  string state {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "PAUSE",
+        "RUN",
+        "STOP",
+      ]
+    }
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "eventRelay"
+  dirName = "eventRelays"
+  metadataType = "EventRelayConfig"
+}
