@@ -31,14 +31,6 @@ salesforce.Layout Account_Account__28Marketing_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Account.field.Site
             },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.GWR_checkbokx2__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.GWR_new_checkbox__c
-            },
           ]
         },
         {

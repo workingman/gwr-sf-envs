@@ -43,14 +43,6 @@ salesforce.Layout Account_Account_Layout@bs {
               behavior = "Edit"
               field = salesforce.Account.field.AnnualRevenue
             },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.GWR_checkbokx2__c
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.Account.field.GWR_new_checkbox__c
-            },
           ]
         },
         {
