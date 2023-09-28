@@ -1,0 +1,14 @@
+salesforce.FieldSet DuplicateRecordSet_npsp__ContactMergeDRS {
+  fullName = "DuplicateRecordSet.npsp__ContactMergeDRS"
+  description = "Contact Merge page"
+  label = "ContactMergeDRS"
+  _parent = [
+    salesforce.DuplicateRecordSet,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.npsp
+    },
+  ]
+  _alias = "ContactMergeDRS (npsp)"
+}
