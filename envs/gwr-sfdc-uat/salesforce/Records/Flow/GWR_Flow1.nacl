@@ -1,0 +1,75 @@
+salesforce.Flow GWR_Flow1 {
+  fullName = "GWR_Flow1"
+  actionCalls = {
+    name = "task_gwr1"
+    label = "task gwr1"
+    locationX = 176
+    locationY = 278
+    actionName = salesforce.QuickAction.instance.NewTask
+    actionType = "quickAction"
+    flowTransactionModel = "CurrentTransaction"
+    inputParameters = [
+      {
+        name = "OwnerId"
+        value = {
+          elementReference = "gwr_c1"
+        }
+      },
+    ]
+    nameSegment = "NewTask"
+    versionSegment = 1
+  }
+  apiVersion = 54
+  constants = [
+    {
+      name = "gwr_c1"
+      dataType = "Number"
+      value = {
+        numberValue = 1
+      }
+    },
+  ]
+  environments = "Default"
+  interviewLabel = "GWR Flow1 {!$Flow.CurrentDateTime}"
+  label = "GWR Flow1"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "Flow"
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "GWR_sub_discount"
+    }
+  }
+  status = "Draft"
+  subflows = {
+    name = "GWR_sub_discount"
+    label = "GWR sub discount"
+    locationX = 176
+    locationY = 158
+    connector = {
+      targetReference = "task_gwr1"
+    }
+    flowName = "runtime_commerce_adj__Discount_Item"
+  }
+  _alias = "GWR Flow1"
+}
