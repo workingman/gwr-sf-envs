@@ -1,0 +1,175 @@
+type salesforce.TopicAssignment {
+  serviceid Id {
+    apiName = "TopicAssignment.Id"
+    label = "Topic Assignment ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup TopicId {
+    apiName = "TopicAssignment.TopicId"
+    relationshipName = "Topic"
+    referenceTo = [
+      salesforce.Topic,
+    ]
+    _required = true
+    label = "Topic ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup EntityId {
+    apiName = "TopicAssignment.EntityId"
+    relationshipName = "Entity"
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Asset,
+      salesforce.Campaign,
+      salesforce.Case,
+      salesforce.ChangeRequest,
+      salesforce.Contact,
+      "ContentDocument",
+      salesforce.Contract,
+      salesforce.Event,
+      salesforce.FeedItem,
+      salesforce.Incident,
+      salesforce.Lead,
+      salesforce.Opportunity,
+      salesforce.Order,
+      salesforce.Problem,
+      salesforce.ResourceAbsence,
+      salesforce.ResourcePreference,
+      salesforce.ReturnOrder,
+      salesforce.ReturnOrderLineItem,
+      salesforce.ServiceAppointment,
+      salesforce.ServiceResource,
+      salesforce.ServiceResourceSkill,
+      salesforce.ServiceTerritory,
+      salesforce.ServiceTerritoryMember,
+      salesforce.Shift,
+      salesforce.Solution,
+      salesforce.Task,
+      salesforce.WorkOrder,
+      salesforce.WorkOrderLineItem,
+      salesforce.WorkPlan,
+      salesforce.WorkPlanTemplate,
+      salesforce.WorkPlanTemplateEntry,
+      salesforce.WorkStep,
+      salesforce.WorkStepTemplate,
+      "npe01__Contacts_And_Orgs_Settings__c",
+      "npe01__OppPayment__c",
+      "npe01__Payment_Field_Mapping_Settings__c",
+      "npe03__Custom_Field_Mapping__c",
+      "npe03__Custom_Installment_Settings__c",
+      "npe03__Recurring_Donation__c",
+      "npe03__Recurring_Donations_Settings__c",
+      "npe4__Relationship_Auto_Create__c",
+      "npe4__Relationship_Error__c",
+      "npe4__Relationship_Lookup__c",
+      "npe4__Relationship_Settings__c",
+      "npe4__Relationship__c",
+      "npe5__Affiliation__c",
+      "npe5__Affiliations_Settings__c",
+      "npo02__Household__c",
+      "npo02__Households_Settings__c",
+      "npo02__Opportunity_Rollup_Error__c",
+      "npo02__User_Rollup_Field_Settings__c",
+      "npsp__Account_Soft_Credit__c",
+      "npsp__Address_Verification_Settings__c",
+      "npsp__Address__c",
+      "npsp__Allocation__c",
+      "npsp__Allocations_Settings__c",
+      "npsp__Batch_Data_Entry_Settings__c",
+      "npsp__Batch__c",
+      "npsp__Custom_Column_Header__c",
+      "npsp__Customizable_Rollup_Settings__c",
+      "npsp__DataImportBatch__c",
+      "npsp__DataImport__c",
+      "npsp__Data_Import_Settings__c",
+      "npsp__Engagement_Plan_Task__c",
+      "npsp__Engagement_Plan_Template__c",
+      "npsp__Engagement_Plan__c",
+      "npsp__Error_Settings__c",
+      "npsp__Error__c",
+      "npsp__Form_Template__c",
+      "npsp__Fund__c",
+      "npsp__General_Accounting_Unit__c",
+      "npsp__GetStartedCompletionChecklistState__c",
+      "npsp__Gift_Entry_Settings__c",
+      "npsp__Grant_Deadline__c",
+      "npsp__Household_Naming_Settings__c",
+      "npsp__Level__c",
+      "npsp__Levels_Settings__c",
+      "npsp__Opportunity_Naming_Settings__c",
+      "npsp__Partial_Soft_Credit__c",
+      "npsp__RecurringDonationChangeLog__c",
+      "npsp__Relationship_Sync_Excluded_Fields__c",
+      "npsp__Schedulable__c",
+      "npsp__Trigger_Handler__c",
+    ]
+    _required = true
+    label = "Entity ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text EntityKeyPrefix {
+    apiName = "TopicAssignment.EntityKeyPrefix"
+    length = 3
+    _required = true
+    label = "Record Key Prefix"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EntityType {
+    apiName = "TopicAssignment.EntityType"
+    length = 80
+    label = "Object Type"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TopicAssignment.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TopicAssignment.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TopicAssignment.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TopicAssignment.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}
