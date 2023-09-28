@@ -128,34 +128,9 @@ type salesforce.Account {
     label = "SLA"
     valueSet = [
       {
-        fullName = "Gold"
+        fullName = "Bronze"
         default = false
-        label = "Gold"
-      },
-      {
-        fullName = "Silver"
-        default = false
-        label = "Silver"
-      },
-      {
-        fullName = "Copper"
-        default = true
-        label = "Copper"
-      },
-      {
-        fullName = "Platinum"
-        default = false
-        label = "Platinum"
-      },
-      {
-        fullName = "Titanium"
-        default = false
-        label = "Titanium"
-      },
-      {
-        fullName = "Tin"
-        default = false
-        label = "Tin"
+        label = "Bronze"
       },
     ]
     sorted = false
