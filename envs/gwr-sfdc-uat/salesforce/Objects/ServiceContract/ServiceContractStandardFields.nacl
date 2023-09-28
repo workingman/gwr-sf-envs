@@ -17,14 +17,9 @@ type salesforce.ServiceContract {
     updateable = true
     queryable = true
   }
-  salesforce.Percent AdditionalDiscount {
+  salesforce.Unknown AdditionalDiscount {
     apiName = "ServiceContract.AdditionalDiscount"
-    label = "Additional Discount"
-    createable = true
-    updateable = true
-    scale = 2
-    precision = 5
-    queryable = true
+    _hidden_value = true
   }
   salesforce.Picklist ApprovalStatus {
     apiName = "ServiceContract.ApprovalStatus"

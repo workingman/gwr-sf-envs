@@ -100,21 +100,6 @@ salesforce.Layout WorkOrderLineItem_Work_Order_Line_Item_Layout@bssss {
         "Name",
         "ExecutionOrder",
       ]
-      relatedList = "NewWorkPlans"
-    },
-    {
-      fields = [
-        "Name",
-        "Status",
-        "ExecutionOrder",
-      ]
-      relatedList = "NewWorkSteps"
-    },
-    {
-      fields = [
-        "Name",
-        "ExecutionOrder",
-      ]
       relatedList = "WorkPlans"
     },
     {

@@ -250,6 +250,9 @@ salesforce.Layout Case_Case__28Marketing_29_Layout@bspps {
   quickActionList = {
     quickActionListItems = [
       {
+        quickActionName = "Case.CaseComment"
+      },
+      {
         quickActionName = "Case.ChangeStatus"
       },
       {

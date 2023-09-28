@@ -187,7 +187,7 @@ type salesforce.ChangeRequest {
     },
   ]
   compactLayoutAssignment = "SYSTEM"
-  enableFeeds = true
+  enableFeeds = false
   externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
@@ -205,6 +205,5 @@ type salesforce.ChangeRequest {
   topicsForObjects = {
     enableTopics = false
   }
-  feedHistoryTrackedFields = {
-  }
+  
 }

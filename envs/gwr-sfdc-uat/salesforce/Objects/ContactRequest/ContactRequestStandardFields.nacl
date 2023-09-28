@@ -138,6 +138,7 @@ type salesforce.ContactRequest {
       salesforce.Account,
       salesforce.Case,
       salesforce.Opportunity,
+      salesforce.SRM_Connected_Org__c,
       salesforce.WorkOrder,
       "npe01__Contacts_And_Orgs_Settings__c",
       "npe01__OppPayment__c",

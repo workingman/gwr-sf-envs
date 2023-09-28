@@ -81,10 +81,10 @@ type salesforce.EmailMessage {
     apiName = "EmailMessage.IsExternallyVisible"
     defaultValue = false
     label = "Is Externally Visible"
-    createable = false
-    updateable = false
+    createable = true
+    updateable = true
     queryable = true
-    _hidden_value = true
+    
   }
   salesforce.Unknown IsPrivateDraft {
     apiName = "EmailMessage.IsPrivateDraft"
@@ -132,12 +132,15 @@ type salesforce.EmailMessage {
       salesforce.Campaign,
       salesforce.Case,
       salesforce.ChangeRequest,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
       salesforce.CommSubscriptionConsent,
       salesforce.ContactRequest,
       salesforce.Contract,
       salesforce.ContractLineItem,
       salesforce.Coupon,
       salesforce.CreditMemo,
+      salesforce.DelegatedAccount,
       salesforce.Entitlement,
       salesforce.Image,
       salesforce.Incident,
@@ -148,6 +151,10 @@ type salesforce.EmailMessage {
       salesforce.OperatingHoursHoliday,
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartnerFundAllocation,
+      salesforce.PartnerFundClaim,
+      salesforce.PartnerFundRequest,
+      salesforce.PartnerMarketingBudget,
       salesforce.PartyConsent,
       salesforce.Problem,
       salesforce.ProcessException,
@@ -267,9 +274,9 @@ type salesforce.EmailMessage {
     apiName = "EmailMessage.ValidatedFromAddress"
     valueSet = [
       {
-        fullName = "geoffrey.routledge+sfuat@salto.io"
+        fullName = "geoffrey.routledge+dev@salto.io"
         isActive = true
-        label = "GWR UAT <geoffrey.routledge+sfuat@salto.io>"
+        label = "GWR DEV <geoffrey.routledge+dev@salto.io>"
         default = false
       },
     ]

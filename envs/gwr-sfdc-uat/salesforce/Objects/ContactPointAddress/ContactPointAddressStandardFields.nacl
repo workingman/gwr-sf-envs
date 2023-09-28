@@ -2632,13 +2632,9 @@ type salesforce.ContactPointAddress {
     updateable = true
     queryable = true
   }
-  salesforce.Checkbox IsThirdPartyAddress {
+  salesforce.Unknown IsThirdPartyAddress {
     apiName = "ContactPointAddress.IsThirdPartyAddress"
-    defaultValue = false
-    label = "Is Third-Party Address"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "ContactPointAddress.Name"

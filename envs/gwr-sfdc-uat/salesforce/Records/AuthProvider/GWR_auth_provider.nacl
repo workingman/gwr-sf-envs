@@ -1,0 +1,16 @@
+salesforce.AuthProvider GWR_auth_provider {
+  fullName = "GWR_auth_provider"
+  authorizeUrl = "https://accounts.google.com/o/oauth2/auth?access_type=offline&approval_prompt=force"
+  consumerKey = "638983138535-12u9vafv6fu2glktagr8al5ruo5rari0.apps.googleusercontent.com"
+  consumerSecret = "Placeholder_Value"
+  defaultScopes = "openid email profile https://www.googleapis.com/auth/drive"
+  friendlyName = "GWR auth provider"
+  includeOrgIdInIdentifier = false
+  providerType = "OpenIdConnect"
+  requireMfa = false
+  sendAccessTokenInHeader = true
+  sendClientCredentialsInHeader = false
+  sendSecretInApis = true
+  tokenUrl = "https://accounts.google.com/o/oauth2/token"
+  _alias = "GWR_auth_provider"
+}

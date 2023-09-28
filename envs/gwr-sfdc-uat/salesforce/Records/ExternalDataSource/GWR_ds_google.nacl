@@ -1,0 +1,10 @@
+salesforce.ExternalDataSource GWR_ds_google {
+  authProvider = salesforce.AuthProvider.instance.GWR_auth_provider
+  isWritable = false
+  label = "GWR ds google"
+  principalType = "PerUser"
+  protocol = "Oauth"
+  type = "ContentHubGDrive"
+  fullName = "GWR_ds_google"
+  _alias = "GWR ds google"
+}

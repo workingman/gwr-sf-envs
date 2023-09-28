@@ -24,10 +24,11 @@ type salesforce.AppointmentInvitation {
   }
   salesforce.Picklist AppointmentType {
     apiName = "AppointmentInvitation.AppointmentType"
-    label = "Appointment Type"
-    createable = true
-    updateable = false
-    queryable = true
+    
+    
+    
+    
+    _hidden_value = true
   }
   salesforce.Date BookingEndDate {
     apiName = "AppointmentInvitation.BookingEndDate"

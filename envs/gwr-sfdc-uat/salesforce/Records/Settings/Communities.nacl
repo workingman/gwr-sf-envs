@@ -9,9 +9,19 @@ salesforce.CommunitiesSettings {
   enableGuestRecordReassignOrgPref = true
   enableGuestSecurityOptOutCruc = "false"
   enableInviteChatterGuestEnabled = true
-  enableNetworksEnabled = false
+  enableNetworksEnabled = true
   enableOotbProfExtUserOpsEnable = false
   enablePRMAccRelPref = false
   enableRelaxPartnerAccountFieldPref = false
   _alias = "Communities"
+  canModerateAllFeedPosts = false
+  embeddedVisualforcePages = false
+  enableCommunityWorkspaces = true
+  enableCspNotesOnAccConPref = false
+  enableGuvSecurityOptOutPref = "false"
+  enableNameFieldsUserPIIEnabled = "false"
+  enableNetPortalUserReportOpts = false
+  enablePowerCustomerCaseStatus = false
+  enablePreventBadgeGuestAccess = "true"
+  enableUnsupportedBrowserModalPref = true
 }

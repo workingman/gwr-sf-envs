@@ -49,34 +49,10 @@ type salesforce.Promotion {
     updateable = true
     queryable = true
   }
-  salesforce.Picklist ExclusivityType {
+  salesforce.Unknown ExclusivityType {
     apiName = "Promotion.ExclusivityType"
     inlineHelpText = "To combine the promotion with other promotions, select No. To prevent combining the promotion with promotions of the same class, select Class. To let it be the only promotion used for an entire order, select Global."
-    valueSet = [
-      {
-        fullName = "No"
-        isActive = true
-        label = "No"
-        default = false
-      },
-      {
-        fullName = "Class"
-        isActive = true
-        label = "Class"
-        default = true
-      },
-      {
-        fullName = "Global"
-        isActive = true
-        label = "Global"
-        default = false
-      },
-    ]
-    restricted = true
-    label = "Exclusivity Type"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
   salesforce.Checkbox IsActive {
     apiName = "Promotion.IsActive"
@@ -102,14 +78,10 @@ type salesforce.Promotion {
     updateable = true
     queryable = true
   }
-  salesforce.Checkbox IsTiered {
+  salesforce.Unknown IsTiered {
     apiName = "Promotion.IsTiered"
     inlineHelpText = "This setting is permanent and can't be changed after the promotion is saved. Create a new promotion instead."
-    defaultValue = false
-    label = "Tiered Promotion"
-    createable = true
-    updateable = false
-    queryable = true
+    _hidden_value = true
   }
   salesforce.Number MaximumUsageCount {
     apiName = "Promotion.MaximumUsageCount"

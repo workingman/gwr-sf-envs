@@ -1,0 +1,16 @@
+type salesforce.Site {
+  annotations {
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string urlPathPrefix {
+  }
+}

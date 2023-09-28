@@ -26,6 +26,8 @@ type salesforce.TopicAssignment {
       salesforce.Campaign,
       salesforce.Case,
       salesforce.ChangeRequest,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
       salesforce.Contact,
       "ContentDocument",
       salesforce.Contract,
@@ -35,11 +37,16 @@ type salesforce.TopicAssignment {
       salesforce.Lead,
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartnerFundAllocation,
+      salesforce.PartnerFundClaim,
+      salesforce.PartnerFundRequest,
+      salesforce.PartnerMarketingBudget,
       salesforce.Problem,
       salesforce.ResourceAbsence,
       salesforce.ResourcePreference,
       salesforce.ReturnOrder,
       salesforce.ReturnOrderLineItem,
+      salesforce.SRM_Connected_Org__c,
       salesforce.ServiceAppointment,
       salesforce.ServiceResource,
       salesforce.ServiceResourceSkill,
@@ -171,5 +178,15 @@ type salesforce.TopicAssignment {
     updateable = false
     queryable = true
     _hidden_value = true
+  }
+  salesforce.Lookup NetworkId {
+    apiName = "TopicAssignment.NetworkId"
+    referenceTo = [
+      salesforce.Network,
+    ]
+    label = "Network ID"
+    createable = true
+    updateable = false
+    queryable = true
   }
 }

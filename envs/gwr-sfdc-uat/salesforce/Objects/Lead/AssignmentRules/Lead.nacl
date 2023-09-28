@@ -5,8 +5,19 @@ salesforce.AssignmentRules Lead {
       active = true
       ruleEntry = [
         {
-          assignedTo = "geoffrey.routledge+sfuat@salto.io"
-          assignedToType = "User"
+          assignedTo = salesforce.Queue.instance.hotLead
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Lead.field.LeadScore__c
+              operation = "greaterOrEqual"
+              value = "0.4"
+            },
+          ]
+        },
+        {
+          assignedTo = salesforce.Queue.instance.LeadQ
+          assignedToType = "Queue"
           criteriaItems = [
             {
               field = "Lead.Country"
@@ -16,13 +27,24 @@ salesforce.AssignmentRules Lead {
           ]
         },
         {
-          assignedTo = "geoffrey.routledge+sfuat@salto.io"
-          assignedToType = "User"
+          assignedTo = salesforce.Queue.instance.LeadQ
+          assignedToType = "Queue"
           criteriaItems = [
             {
               field = "Lead.Country"
               operation = "notEqual"
               value = "US,USA,United States,United States of America"
+            },
+          ]
+        },
+        {
+          assignedTo = salesforce.Queue.instance.hotLead
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = "Lead.City"
+              operation = "equals"
+              value = "Vancouver"
             },
           ]
         },

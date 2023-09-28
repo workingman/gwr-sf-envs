@@ -1,0 +1,16 @@
+type salesforce.SRM_Connected_Org__c {
+  salesforce.Text Named_Credential_Reference__c {
+    apiName = "SRM_Connected_Org__c.Named_Credential_Reference__c"
+    defaultValueFormula = "\"callout:ActualNameCredentialName\""
+    externalId = false
+    label = "Named Credential Reference"
+    length = 200
+    _required = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

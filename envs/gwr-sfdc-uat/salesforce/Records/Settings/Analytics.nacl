@@ -28,7 +28,7 @@ salesforce.AnalyticsSettings {
   enableNullDimension = false
   enableOrgCanSeeLivePreviews = "false"
   enableOrgCanViewTableau = "false"
-  enableOrgCanViewThumbnailForOA = "true"
+  enableOrgCanViewThumbnailForOA = "false"
   enableOrgHasMobileOfflineEnabled = "true"
   enableOrgHasWatchlistEnabled = "true"
   enableQueryLiveConnectors = true

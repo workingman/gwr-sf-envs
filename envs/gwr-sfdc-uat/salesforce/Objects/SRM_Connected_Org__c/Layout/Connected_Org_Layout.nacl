@@ -1,0 +1,79 @@
+salesforce.Layout SRM_Connected_Org__c_Connected_Org_Layout@uuuubss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SRM_Connected_Org__c.field.Named_Credential_Reference__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SRM_Connected_Org__c.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SRM_Connected_Org__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SRM_Connected_Org__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SRM_Connected_Org__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Named_Credential_Reference__c",
+    ]
+  }
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SRM_Connected_Org__c-Connected Org Layout"
+  _parent = [
+    salesforce.SRM_Connected_Org__c,
+  ]
+  _alias = "SRM_Connected_Org__c-Connected Org Layout"
+}

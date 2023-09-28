@@ -141,4 +141,15 @@ type salesforce.CollaborationGroupMember {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Lookup NetworkId {
+    apiName = "CollaborationGroupMember.NetworkId"
+    referenceTo = [
+      salesforce.Network,
+    ]
+    label = "Network ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
 }

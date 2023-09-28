@@ -247,12 +247,15 @@ type salesforce.Task {
       salesforce.Campaign,
       salesforce.Case,
       salesforce.ChangeRequest,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
       salesforce.CommSubscriptionConsent,
       salesforce.ContactRequest,
       salesforce.Contract,
       salesforce.ContractLineItem,
       salesforce.Coupon,
       salesforce.CreditMemo,
+      salesforce.DelegatedAccount,
       salesforce.Entitlement,
       salesforce.Image,
       salesforce.Incident,
@@ -263,6 +266,10 @@ type salesforce.Task {
       salesforce.OperatingHoursHoliday,
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartnerFundAllocation,
+      salesforce.PartnerFundClaim,
+      salesforce.PartnerFundRequest,
+      salesforce.PartnerMarketingBudget,
       salesforce.PartyConsent,
       salesforce.Problem,
       salesforce.ProcessException,
@@ -3190,5 +3197,9 @@ type salesforce.Task {
     createable = true
     updateable = true
     queryable = true
+  }
+  salesforce.Unknown IsVisibleInSelfService {
+    apiName = "Task.IsVisibleInSelfService"
+    _hidden_value = true
   }
 }

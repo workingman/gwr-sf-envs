@@ -204,12 +204,12 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     valueSet = [
       {
         fullName = "Home"
-        default = true
+        default = false
         label = "Home"
       },
       {
         fullName = "Work"
-        default = false
+        default = true
         label = "Work"
       },
       {
@@ -888,7 +888,7 @@ npo02__Household__r.npo02__LastCloseDate__c)
     valueSet = [
       {
         fullName = "Household__c.Name"
-        default = false
+        default = true
         label = "Household__c.Name"
       },
       {

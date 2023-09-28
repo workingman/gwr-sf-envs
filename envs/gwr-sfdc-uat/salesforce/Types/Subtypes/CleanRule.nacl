@@ -36,6 +36,7 @@ type salesforce.CleanRule {
         "CustomEntityDefinition",
         "DatacloudAddress",
         "DatacloudDandBCompany",
+        "items_GWR_ds_google__x",
         "npsp__DeploymentEvent__e",
       ]
     }

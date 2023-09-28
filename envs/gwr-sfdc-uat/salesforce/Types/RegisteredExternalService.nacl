@@ -1,0 +1,76 @@
+type salesforce.RegisteredExternalService {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string configUrl {
+  }
+  string documentationUrl {
+  }
+  string extensionPointName {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Cart_Prices_Extension",
+        "Checkout_CartSummary_ComputePromotions",
+        "Checkout_CartSummary_Inventory",
+        "Checkout_CartSummary_PriceCart",
+        "Checkout_Update_CalcCartSummary",
+        "CommerceDx_Inventory",
+        "CommerceDx_Pricing",
+        "CommerceDx_TicketProcessing",
+        "Commerce_Domain_Cart_Summary",
+        "Commerce_Domain_Inventory_CartCalculator",
+        "Commerce_Domain_Inventory_Service",
+        "Commerce_Domain_Pricing_CartCalculator",
+        "Commerce_Domain_Pricing_Service",
+        "Commerce_Domain_Promotions_CartCalculator",
+        "Commerce_Domain_Shipping_CartCalculator",
+        "Commerce_Domain_Tax_CartCalculator",
+        "Commerce_Integration_B2CEOrderImport",
+        "Product_Inventory_CheckInventory",
+      ]
+    }
+  }
+  string externalServiceProvider {
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+    ]
+  }
+  string externalServiceProviderType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Extension",
+        "Inventory",
+        "Price",
+        "Promotions",
+        "Shipment",
+        "Tax",
+      ]
+    }
+  }
+  serviceid fullName {
+  }
+  boolean isProtected {
+  }
+  string masterLabel {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "registeredExternalService"
+  dirName = "registeredExternalServices"
+  metadataType = "RegisteredExternalService"
+}

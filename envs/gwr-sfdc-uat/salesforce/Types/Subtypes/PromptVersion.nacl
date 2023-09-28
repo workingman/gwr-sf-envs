@@ -89,7 +89,7 @@ type salesforce.PromptVersion {
   }
   string experienceContext {
     foreignKeyDomain = [
-      "CommunityTemplateDefinition",
+      salesforce.CommunityTemplateDefinition,
       salesforce.CustomSite,
     ]
   }

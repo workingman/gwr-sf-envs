@@ -1,13 +1,7 @@
 type salesforce.WorkPlanTemplateEntry {
-  salesforce.Number ExecutionOrder {
+  salesforce.Unknown ExecutionOrder {
     apiName = "WorkPlanTemplateEntry.ExecutionOrder"
-    label = "Execution Order"
-    precision = 9
-    createable = true
-    updateable = true
-    scale = 0
-    unique = false
-    queryable = true
+    _hidden_value = true
   }
   salesforce.MasterDetail WorkPlanTemplateId {
     apiName = "WorkPlanTemplateEntry.WorkPlanTemplateId"

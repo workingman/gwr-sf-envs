@@ -1,18 +1,11 @@
 type salesforce.WorkPlanTemplate {
-  salesforce.LongTextArea Description {
+  salesforce.Unknown Description {
     apiName = "WorkPlanTemplate.Description"
-    length = 32000
-    label = "Description"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
-  salesforce.Checkbox IsActive {
+  salesforce.Unknown IsActive {
     apiName = "WorkPlanTemplate.IsActive"
-    label = "Active"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "WorkPlanTemplate.Name"
@@ -38,15 +31,9 @@ type salesforce.WorkPlanTemplate {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Number RelativeExecutionOrder {
+  salesforce.Unknown RelativeExecutionOrder {
     apiName = "WorkPlanTemplate.RelativeExecutionOrder"
-    label = "Relative Execution Order"
-    precision = 9
-    createable = true
-    updateable = true
-    scale = 0
-    unique = false
-    queryable = true
+    _hidden_value = true
   }
   serviceid Id {
     apiName = "WorkPlanTemplate.Id"

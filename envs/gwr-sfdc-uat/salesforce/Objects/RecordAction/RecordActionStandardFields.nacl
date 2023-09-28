@@ -27,6 +27,66 @@ type salesforce.RecordAction {
         default = false
       },
       {
+        fullName = "GWR_Flow1"
+        isActive = true
+        label = "GWR_Flow1"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow2"
+        isActive = true
+        label = "GWR_Flow2"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow3"
+        isActive = true
+        label = "GWR_Flow3"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow4"
+        isActive = true
+        label = "GWR_Flow4"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow5"
+        isActive = true
+        label = "GWR_Flow5"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow6"
+        isActive = true
+        label = "GWR_Flow6"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow7"
+        isActive = true
+        label = "GWR_Flow7"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow8"
+        isActive = true
+        label = "GWR_Flow8"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow9a"
+        isActive = true
+        label = "GWR_Flow9a"
+        default = false
+      },
+      {
+        fullName = "QuickActionDefinition._NewQuipDocument"
+        isActive = true
+        label = "QuickActionDefinition._NewQuipDocument"
+        default = false
+      },
+      {
         fullName = "QuickActionDefinition.Account.npsp__New_Address"
         isActive = true
         label = "QuickActionDefinition.Account.npsp__New_Address"
@@ -159,6 +219,12 @@ type salesforce.RecordAction {
         default = false
       },
       {
+        fullName = "QuickActionDefinition.GuestCommunityCase"
+        isActive = true
+        label = "QuickActionDefinition.GuestCommunityCase"
+        default = false
+      },
+      {
         fullName = "QuickActionDefinition.Incident._LightningUpdateIncident"
         isActive = true
         label = "QuickActionDefinition.Incident._LightningUpdateIncident"
@@ -186,6 +252,12 @@ type salesforce.RecordAction {
         fullName = "QuickActionDefinition.NewCase"
         isActive = true
         label = "QuickActionDefinition.NewCase"
+        default = false
+      },
+      {
+        fullName = "QuickActionDefinition.NewCommunityCase"
+        isActive = true
+        label = "QuickActionDefinition.NewCommunityCase"
         default = false
       },
       {
@@ -563,6 +635,60 @@ type salesforce.RecordAction {
         default = false
       },
       {
+        fullName = "GWR_Flow1"
+        isActive = true
+        label = "GWR_Flow1"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow2"
+        isActive = true
+        label = "GWR_Flow2"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow3"
+        isActive = true
+        label = "GWR_Flow3"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow4"
+        isActive = true
+        label = "GWR_Flow4"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow5"
+        isActive = true
+        label = "GWR_Flow5"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow6"
+        isActive = true
+        label = "GWR_Flow6"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow7"
+        isActive = true
+        label = "GWR_Flow7"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow8"
+        isActive = true
+        label = "GWR_Flow8"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow9a"
+        isActive = true
+        label = "GWR_Flow9a"
+        default = false
+      },
+      {
         fullName = "runtime_commerce_adj__Discount_Item"
         isActive = true
         label = "runtime_commerce_adj__Discount_Item"
@@ -784,6 +910,7 @@ type salesforce.RecordAction {
       salesforce.ResourcePreference,
       salesforce.ReturnOrder,
       salesforce.ReturnOrderLineItem,
+      salesforce.SRM_Connected_Org__c,
       salesforce.Scorecard,
       salesforce.ServiceAppointment,
       salesforce.ServiceContract,
@@ -794,7 +921,6 @@ type salesforce.RecordAction {
       salesforce.SkillRequirement,
       salesforce.TimeSlot,
       salesforce.User,
-      salesforce.VoiceCall,
       salesforce.WorkOrder,
       salesforce.WorkOrderLineItem,
       salesforce.WorkType,

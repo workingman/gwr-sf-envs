@@ -10,6 +10,7 @@ type salesforce.FeedItem {
     relationshipName = "Parent"
     referenceTo = [
       salesforce.Account,
+      salesforce.ActiveScratchOrg,
       salesforce.ApiAnomalyEventStore,
       salesforce.AppointmentCategory,
       salesforce.AppointmentInvitation,
@@ -24,6 +25,9 @@ type salesforce.FeedItem {
       salesforce.ChangeRequest,
       salesforce.ChangeRequestRelatedIssue,
       salesforce.ChangeRequestRelatedItem,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
+      salesforce.ChannelProgramMember,
       salesforce.CollaborationGroup,
       salesforce.CommSubscription,
       salesforce.CommSubscriptionChannelType,
@@ -41,6 +45,7 @@ type salesforce.FeedItem {
       salesforce.CreditMemoLine,
       "Dashboard",
       "DashboardComponent",
+      salesforce.DelegatedAccount,
       salesforce.EngagementChannelType,
       salesforce.EngagementChannelWorkType,
       "EnhancedLetterhead",
@@ -57,11 +62,16 @@ type salesforce.FeedItem {
       salesforce.Location,
       salesforce.LocationGroup,
       salesforce.MessagingSession,
+      salesforce.NamespaceRegistry,
       salesforce.OperatingHours,
       salesforce.OperatingHoursHoliday,
       salesforce.Opportunity,
       salesforce.Order,
       salesforce.OrderItem,
+      salesforce.PartnerFundAllocation,
+      salesforce.PartnerFundClaim,
+      salesforce.PartnerFundRequest,
+      salesforce.PartnerMarketingBudget,
       salesforce.PartyConsent,
       salesforce.Payment,
       salesforce.Problem,
@@ -81,6 +91,8 @@ type salesforce.FeedItem {
       salesforce.ResourcePreference,
       salesforce.ReturnOrder,
       salesforce.ReturnOrderLineItem,
+      salesforce.SRM_Connected_Org__c,
+      salesforce.ScratchOrgInfo,
       salesforce.ServiceAppointment,
       salesforce.ServiceContract,
       salesforce.ServiceResource,
@@ -99,7 +111,6 @@ type salesforce.FeedItem {
       "ThreatDetectionFeedback",
       salesforce.Topic,
       salesforce.User,
-      salesforce.VoiceCall,
       salesforce.Waitlist,
       salesforce.WaitlistParticipant,
       salesforce.WaitlistServiceResource,
@@ -114,6 +125,7 @@ type salesforce.FeedItem {
       salesforce.WorkType,
       salesforce.WorkTypeGroup,
       salesforce.WorkTypeGroupMember,
+      salesforce.items_GWR_ds_google__x,
       "npe01__Contacts_And_Orgs_Settings__c",
       "npe01__OppPayment__c",
       "npe01__Payment_Field_Mapping_Settings__c",
@@ -590,6 +602,44 @@ type salesforce.FeedItem {
     label = "Status"
     createable = true
     updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Visibility {
+    apiName = "FeedItem.Visibility"
+    valueSet = [
+      {
+        fullName = "AllUsers"
+        isActive = true
+        label = "All Users"
+        default = false
+      },
+      {
+        fullName = "InternalUsers"
+        isActive = true
+        label = "Internal Users"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Visibility"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist NetworkScope {
+    apiName = "FeedItem.NetworkScope"
+    valueSet = [
+      {
+        fullName = "AllNetworks"
+        isActive = true
+        label = "All Networks"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Network Scope"
+    createable = true
+    updateable = false
     queryable = true
   }
 }

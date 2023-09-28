@@ -35,6 +35,10 @@ salesforce.Layout Opportunity_Opportunity_Layout@bs {
               behavior = "Edit"
               field = salesforce.Opportunity.field.LeadSource
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.GWR_oppty_chkbox__c
+            },
           ]
         },
         {

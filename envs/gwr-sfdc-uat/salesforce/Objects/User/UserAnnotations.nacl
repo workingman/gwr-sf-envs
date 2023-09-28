@@ -281,5 +281,10 @@ type salesforce.User {
   _alias = "User"
   feedHistoryTrackedFields = {
     ManagerId = salesforce.User.field.ManagerId
+    AboutMe = salesforce.User.field.AboutMe
+    Address = salesforce.User.field.Address
+    Email = salesforce.User.field.Email
+    Phone = salesforce.User.field.Phone
+    Title = salesforce.User.field.Title
   }
 }

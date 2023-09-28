@@ -39,6 +39,10 @@ salesforce.Layout Opportunity_Opportunity__28Sales_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Opportunity.field.CampaignId
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.GWR_oppty_chkbox__c
+            },
           ]
         },
         {

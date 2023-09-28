@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_SalesNewCustomerEmailGWR20220815@zcd {
+  available = true
+  description = "Email to new customers"
+  encodingKey = "UTF-8"
+  name = "__Sales: New Customer Email"
+  style = "none"
+  subject = "Welcome to the GenWatt Community"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SalesNewCustomerEmailGWR20220815"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SalesNewCustomerEmailGWR20220815/SalesNewCustomerEmailGWR20220815.email")
+  _alias = "unfiled$public/SalesNewCustomerEmailGWR20220815"
+}

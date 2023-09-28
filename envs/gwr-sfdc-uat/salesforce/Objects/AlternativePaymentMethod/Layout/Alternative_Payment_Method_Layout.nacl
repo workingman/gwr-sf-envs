@@ -32,10 +32,6 @@ salesforce.Layout AlternativePaymentMethod_Alternative_Payment_Method_Layout@bss
               behavior = "Required"
               field = salesforce.AlternativePaymentMethod.field.Status
             },
-            {
-              behavior = "Edit"
-              field = salesforce.AlternativePaymentMethod.field.IsAutoPayEnabled
-            },
           ]
         },
       ]

@@ -236,6 +236,7 @@ type salesforce.Case {
     updateable = true
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.CaseStatus
+    description = "GWR20220727"
   }
   salesforce.Unknown StopStartDate {
     apiName = "Case.StopStartDate"

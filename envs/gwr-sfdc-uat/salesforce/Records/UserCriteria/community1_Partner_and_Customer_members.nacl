@@ -1,0 +1,10 @@
+salesforce.UserCriteria community1_Partner_and_Customer_members@vuuu {
+  fullName = "community1.Partner_and_Customer_members"
+  description = "Member criteria matches customer and partner member"
+  masterLabel = "Customer and Partner Members"
+  userTypes = [
+    "Customer",
+    "Partner",
+  ]
+  _alias = "community1.Partner_and_Customer_members"
+}

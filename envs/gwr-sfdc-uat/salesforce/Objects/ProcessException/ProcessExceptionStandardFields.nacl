@@ -11,6 +11,7 @@ type salesforce.ProcessException {
       salesforce.PaymentAuthorization,
       salesforce.Refund,
       salesforce.ReturnOrder,
+      salesforce.SRM_Connected_Org__c,
       salesforce.WebCart,
       salesforce.WebStore,
       "npe01__Contacts_And_Orgs_Settings__c",

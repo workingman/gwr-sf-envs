@@ -67,14 +67,13 @@ type salesforce.ServiceAppointment {
   }
   salesforce.Lookup AppointmentInvitationId {
     apiName = "ServiceAppointment.AppointmentInvitationId"
-    relationshipName = "AppointmentInvitation"
-    referenceTo = [
-      salesforce.AppointmentInvitation,
-    ]
-    label = "Appointment Invitation ID"
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
+    
+    
+    
+    _hidden_value = true
   }
   salesforce.Picklist AppointmentType {
     apiName = "ServiceAppointment.AppointmentType"

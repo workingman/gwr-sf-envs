@@ -1,0 +1,37 @@
+salesforce.ModerationRule community1_Replace_banned@vu {
+  fullName = "community1.Replace_banned"
+  action = "Replace"
+  active = false
+  description = "Posts and comments using banned keywords are replaced with asterisks"
+  entitiesAndFields = [
+    {
+      entityName = "FeedComment"
+      fieldName = "RawCommentBody"
+      keywordList = "community1.Banned"
+    },
+    {
+      entityName = "FeedItem"
+      fieldName = "LinkUrl"
+      keywordList = "community1.Banned"
+    },
+    {
+      entityName = "FeedItem"
+      fieldName = "RawBody"
+      keywordList = "community1.Banned"
+    },
+    {
+      entityName = "FeedItem"
+      fieldName = "Title"
+      keywordList = "community1.Banned"
+    },
+    {
+      entityName = "FeedPollChoice"
+      fieldName = "ChoiceBody"
+      keywordList = "community1.Banned"
+    },
+  ]
+  masterLabel = "Replace banned keywords with asterisks"
+  type = "Content"
+  userMessage = "You can't use %BLOCKED_KEYWORD% or other inappropriate words in this community. Review your content and try again."
+  _alias = "community1.Replace_banned"
+}

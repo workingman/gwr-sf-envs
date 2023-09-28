@@ -5488,4 +5488,58 @@ type salesforce.User {
     updateable = true
     queryable = true
   }
+  salesforce.Picklist PortalRole {
+    apiName = "User.PortalRole"
+    valueSet = [
+      {
+        fullName = "Executive"
+        isActive = true
+        label = "Executive"
+        default = false
+      },
+      {
+        fullName = "Manager"
+        isActive = true
+        label = "Manager"
+        default = false
+      },
+      {
+        fullName = "Worker"
+        isActive = true
+        label = "User"
+        default = false
+      },
+      {
+        fullName = "PersonAccount"
+        isActive = true
+        label = "Person Account"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Portal Role Level"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown IsSystemControlled {
+    apiName = "User.IsSystemControlled"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPortalEnabled {
+    apiName = "User.IsPortalEnabled"
+    defaultValue = false
+    label = "Is Portal Enabled"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WorkspaceId {
+    apiName = "User.WorkspaceId"
+    _hidden_value = true
+  }
+  salesforce.Unknown UserSubtype {
+    apiName = "User.UserSubtype"
+    _hidden_value = true
+  }
 }

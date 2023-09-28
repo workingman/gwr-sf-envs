@@ -58,7 +58,7 @@ salesforce.SecuritySettings {
     lockSessionsToDomain = true
     lockSessionsToIp = false
     lockerServiceCSP = true
-    lockerServiceNext = true
+    lockerServiceNext = false
     lockerServiceNextControl = false
     redirectBlockModeEnabled = false
     redirectionWarning = true

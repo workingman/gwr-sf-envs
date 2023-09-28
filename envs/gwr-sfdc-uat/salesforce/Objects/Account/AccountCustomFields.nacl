@@ -1,7 +1,7 @@
 type salesforce.Account {
   salesforce.Picklist Active__c {
     apiName = "Account.Active__c"
-    description = "."
+    
     externalId = false
     label = "Active"
     valueSet = [
@@ -85,9 +85,34 @@ type salesforce.Account {
     label = "SLA"
     valueSet = [
       {
-        fullName = "Bronze"
+        fullName = "Gold"
         default = false
-        label = "Bronze"
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Copper"
+        default = true
+        label = "Copper"
+      },
+      {
+        fullName = "Platinum"
+        default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Titanium"
+        default = false
+        label = "Titanium"
+      },
+      {
+        fullName = "Tin"
+        default = false
+        label = "Tin"
       },
     ]
     sorted = false
@@ -1188,5 +1213,23 @@ IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Perio
         reference = salesforce.InstalledPackage.instance.npsp
       },
     ]
+  }
+  salesforce.Checkbox GWR_checkbokx2__c {
+    apiName = "Account.GWR_checkbokx2__c"
+    defaultValue = false
+    externalId = false
+    label = "__GWR checkbokx2"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox GWR_new_checkbox__c {
+    apiName = "Account.GWR_new_checkbox__c"
+    defaultValue = false
+    externalId = false
+    label = "GWR new checkbox"
+    createable = true
+    updateable = true
+    queryable = true
   }
 }

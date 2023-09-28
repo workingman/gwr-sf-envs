@@ -2,7 +2,7 @@ salesforce.EmailTemplate unfiled_public_MarketingProductInquiryResponse@zcd {
   available = true
   description = "Standard email response to website product inquiries"
   encodingKey = "UTF-8"
-  name = "Marketing: Product Inquiry Response"
+  name = "Marketing: Product Inquiry Response _gwr_20220815_"
   style = "none"
   subject = "GenWatt: Thanks for your inquiry"
   type = "text"

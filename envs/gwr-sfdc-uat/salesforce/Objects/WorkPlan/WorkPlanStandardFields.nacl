@@ -1,11 +1,7 @@
 type salesforce.WorkPlan {
-  salesforce.LongTextArea Description {
+  salesforce.Unknown Description {
     apiName = "WorkPlan.Description"
-    length = 32000
-    label = "Description"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
   salesforce.Number ExecutionOrder {
     apiName = "WorkPlan.ExecutionOrder"
@@ -79,25 +75,22 @@ type salesforce.WorkPlan {
   }
   salesforce.Lookup WorkOrderLineItemId {
     apiName = "WorkPlan.WorkOrderLineItemId"
-    relationshipName = "WorkOrderLineItem"
-    referenceTo = [
-      salesforce.WorkOrderLineItem,
-    ]
-    label = "Work Order Line Item ID"
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
+    
+    
+    
+    _hidden_value = true
   }
   salesforce.Lookup WorkPlanTemplateId {
     apiName = "WorkPlan.WorkPlanTemplateId"
-    relationshipName = "WorkPlanTemplate"
-    referenceTo = [
-      salesforce.WorkPlanTemplate,
-    ]
-    label = "Work Plan Template ID"
-    createable = false
-    updateable = false
-    queryable = true
+    
+    
+    
+    
+    
+    
     _hidden_value = true
   }
   serviceid Id {

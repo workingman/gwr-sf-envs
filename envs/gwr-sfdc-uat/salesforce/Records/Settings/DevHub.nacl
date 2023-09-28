@@ -3,7 +3,8 @@ salesforce.DevHubSettings {
   devOpsCenterBetaMsa = "false"
   enableDevOpsCenter = "false"
   enableDevOpsCenterGA = "false"
-  enableScratchOrgManagementPref = false
+  enableScratchOrgManagementPref = true
   enableShapeExportPref = "false"
   _alias = "DevHub"
+  enablePackaging2 = false
 }

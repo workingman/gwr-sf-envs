@@ -5,8 +5,8 @@ salesforce.AssignmentRules Case {
       active = true
       ruleEntry = [
         {
-          assignedTo = "geoffrey.routledge+sfuat@salto.io"
-          assignedToType = "User"
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToType = "Queue"
           criteriaItems = [
             {
               field = "Account.BillingCountry"
@@ -26,8 +26,8 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "geoffrey.routledge+sfuat@salto.io"
-          assignedToType = "User"
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToType = "Queue"
           criteriaItems = [
             {
               field = "Account.BillingCountry"
@@ -37,7 +37,7 @@ salesforce.AssignmentRules Case {
             {
               field = salesforce.Account.field.SLA__c
               operation = "equals"
-              value = "Silver,Bronze"
+              value = "Silver,Copper"
             },
             {
               field = salesforce.Account.field.Type
@@ -47,8 +47,8 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "geoffrey.routledge+sfuat@salto.io"
-          assignedToType = "User"
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToType = "Queue"
           criteriaItems = [
             {
               field = "Account.BillingCountry"
@@ -68,8 +68,8 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "geoffrey.routledge+sfuat@salto.io"
-          assignedToType = "User"
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToType = "Queue"
           criteriaItems = [
             {
               field = "Account.BillingCountry"
@@ -79,7 +79,7 @@ salesforce.AssignmentRules Case {
             {
               field = salesforce.Account.field.SLA__c
               operation = "equals"
-              value = "Silver,Bronze"
+              value = "Silver,Copper"
             },
             {
               field = salesforce.Account.field.Type
@@ -89,8 +89,8 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "geoffrey.routledge+sfuat@salto.io"
-          assignedToType = "User"
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToType = "Queue"
           criteriaItems = [
             {
               field = salesforce.Account.field.Type

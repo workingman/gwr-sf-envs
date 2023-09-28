@@ -195,12 +195,15 @@ type salesforce.Event {
       salesforce.Campaign,
       salesforce.Case,
       salesforce.ChangeRequest,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
       salesforce.CommSubscriptionConsent,
       salesforce.ContactRequest,
       salesforce.Contract,
       salesforce.ContractLineItem,
       salesforce.Coupon,
       salesforce.CreditMemo,
+      salesforce.DelegatedAccount,
       salesforce.Entitlement,
       salesforce.Image,
       salesforce.Incident,
@@ -211,6 +214,10 @@ type salesforce.Event {
       salesforce.OperatingHoursHoliday,
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartnerFundAllocation,
+      salesforce.PartnerFundClaim,
+      salesforce.PartnerFundRequest,
+      salesforce.PartnerMarketingBudget,
       salesforce.PartyConsent,
       salesforce.Problem,
       salesforce.ProcessException,
@@ -3260,6 +3267,10 @@ type salesforce.Event {
     unique = false
     caseSensitive = false
     queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown IsVisibleInSelfService {
+    apiName = "Event.IsVisibleInSelfService"
     _hidden_value = true
   }
 }

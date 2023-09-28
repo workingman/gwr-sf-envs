@@ -351,4 +351,14 @@ type salesforce.Campaign {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Lookup CampaignImageId {
+    apiName = "Campaign.CampaignImageId"
+    referenceTo = [
+      "ContentDocument",
+    ]
+    label = "ContentDocument ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

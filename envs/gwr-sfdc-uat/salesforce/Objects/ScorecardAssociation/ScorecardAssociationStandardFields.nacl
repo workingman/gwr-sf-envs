@@ -16,6 +16,8 @@ type salesforce.ScorecardAssociation {
     relationshipName = "TargetEntity"
     referenceTo = [
       salesforce.Account,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
     ]
     _required = true
     label = "Target Entity ID"

@@ -23,22 +23,18 @@ type salesforce.ChangeRequestRelatedItem {
     updateable = false
     queryable = true
   }
-  salesforce.LongTextArea Comment {
+  salesforce.Unknown Comment {
     apiName = "ChangeRequestRelatedItem.Comment"
-    length = 32000
-    label = "Comment"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
   salesforce.Picklist ImpactLevel {
     apiName = "ChangeRequestRelatedItem.ImpactLevel"
-    restricted = false
+    
     label = "Impact Level"
     createable = true
     updateable = true
     queryable = true
-    valueSetName = salesforce.StandardValueSet.instance.CasePriority
+    
   }
   salesforce.AutoNumber Name {
     apiName = "ChangeRequestRelatedItem.Name"
@@ -50,21 +46,8 @@ type salesforce.ChangeRequestRelatedItem {
   }
   salesforce.Picklist RelationshipType {
     apiName = "ChangeRequestRelatedItem.RelationshipType"
-    valueSet = [
-      {
-        fullName = "Broke Item"
-        isActive = true
-        label = "Broke Item"
-        default = true
-      },
-      {
-        fullName = "Fixed Item"
-        isActive = true
-        label = "Fixed Item"
-        default = false
-      },
-    ]
-    restricted = false
+    
+    
     _required = true
     label = "Relationship Type"
     createable = true

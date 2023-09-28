@@ -378,6 +378,8 @@ type salesforce.ContentVersion {
     relationshipName = "FirstPublishLocation"
     referenceTo = [
       salesforce.Account,
+      salesforce.AccountBrand,
+      salesforce.ActiveScratchOrg,
       salesforce.ApiAnomalyEventStore,
       salesforce.AppointmentCategory,
       salesforce.AppointmentInvitation,
@@ -392,6 +394,9 @@ type salesforce.ContentVersion {
       salesforce.ChangeRequest,
       salesforce.ChangeRequestRelatedIssue,
       salesforce.ChangeRequestRelatedItem,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
+      salesforce.ChannelProgramMember,
       salesforce.CollaborationGroup,
       salesforce.CommSubscription,
       salesforce.CommSubscriptionChannelType,
@@ -410,6 +415,7 @@ type salesforce.ContentVersion {
       salesforce.CreditMemoLine,
       "Dashboard",
       "DashboardComponent",
+      salesforce.DelegatedAccount,
       salesforce.EmailMessage,
       salesforce.EmailTemplate,
       salesforce.EngagementChannelType,
@@ -429,6 +435,8 @@ type salesforce.ContentVersion {
       salesforce.Location,
       salesforce.LocationGroup,
       salesforce.MessagingSession,
+      salesforce.NamespaceRegistry,
+      salesforce.Network,
       salesforce.OperatingHours,
       salesforce.OperatingHoursHoliday,
       salesforce.Opportunity,
@@ -436,6 +444,10 @@ type salesforce.ContentVersion {
       salesforce.OrderItem,
       "Organization",
       "OutgoingEmail",
+      salesforce.PartnerFundAllocation,
+      salesforce.PartnerFundClaim,
+      salesforce.PartnerFundRequest,
+      salesforce.PartnerMarketingBudget,
       salesforce.PartyConsent,
       salesforce.Payment,
       salesforce.Problem,
@@ -455,6 +467,8 @@ type salesforce.ContentVersion {
       salesforce.ResourcePreference,
       salesforce.ReturnOrder,
       salesforce.ReturnOrderLineItem,
+      salesforce.SRM_Connected_Org__c,
+      salesforce.ScratchOrgInfo,
       salesforce.ServiceAppointment,
       salesforce.ServiceContract,
       salesforce.ServiceResource,
@@ -473,7 +487,6 @@ type salesforce.ContentVersion {
       "ThreatDetectionFeedback",
       salesforce.Topic,
       salesforce.User,
-      salesforce.VoiceCall,
       salesforce.Waitlist,
       salesforce.WaitlistParticipant,
       salesforce.WaitlistServiceResource,
@@ -488,6 +501,7 @@ type salesforce.ContentVersion {
       salesforce.WorkType,
       salesforce.WorkTypeGroup,
       salesforce.WorkTypeGroupMember,
+      salesforce.items_GWR_ds_google__x,
       "npe01__Contacts_And_Orgs_Settings__c",
       "npe01__OppPayment__c",
       "npe01__Payment_Field_Mapping_Settings__c",
@@ -667,5 +681,15 @@ type salesforce.ContentVersion {
     caseSensitive = false
     queryable = true
     _hidden_value = true
+  }
+  salesforce.Lookup NetworkId {
+    apiName = "ContentVersion.NetworkId"
+    referenceTo = [
+      salesforce.Network,
+    ]
+    label = "Network ID"
+    createable = true
+    updateable = false
+    queryable = true
   }
 }

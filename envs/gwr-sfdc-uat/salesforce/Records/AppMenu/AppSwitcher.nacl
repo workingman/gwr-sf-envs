@@ -74,19 +74,23 @@ salesforce.AppMenu AppSwitcher {
       type = "CustomApplication"
     },
     {
-      name = salesforce.CustomApplication.instance.standard__DataManager
-      type = "CustomApplication"
-    },
-    {
-      name = salesforce.CustomApplication.instance.standard__RevenueCloudConsole
-      type = "CustomApplication"
-    },
-    {
       name = salesforce.CustomApplication.instance.standard__LightningScheduler
       type = "CustomApplication"
     },
     {
       name = salesforce.CustomApplication.instance.standard__LightningBolt
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.Network.instance.community1
+      type = "Network"
+    },
+    {
+      name = "DEVHUB_nc6ymvhd4kiw4ba2nhjz"
+      type = "ConnectedApp"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__DataManager
       type = "CustomApplication"
     },
     {

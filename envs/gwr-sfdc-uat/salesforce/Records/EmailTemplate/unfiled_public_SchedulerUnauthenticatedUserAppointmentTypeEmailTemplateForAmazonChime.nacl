@@ -1,7 +1,7 @@
 salesforce.EmailTemplate unfiled_public_SchedulerUnauthenticatedUserAppointmentTypeEmailTemplateForAmazonChime@zcd {
   available = true
   description = "Email template for confirmation of an appointment when appointments are scheduled using appointment types with Amazon Chime."
-  encodingKey = "ISO-8859-1"
+  encodingKey = "UTF-8"
   name = "Appointment for Unauthenticated User using Appointment Types - For Amazon Chime."
   style = "none"
   subject = "{!Organization.Name}:Appointment Confirmation."

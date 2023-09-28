@@ -457,4 +457,8 @@ type salesforce.Lead {
     updateable = true
     queryable = true
   }
+  salesforce.Lookup PartnerAccountId {
+    apiName = "Lead.PartnerAccountId"
+    _hidden_value = true
+  }
 }

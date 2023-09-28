@@ -65,6 +65,12 @@ type salesforce.Macro {
         default = false
       },
       {
+        fullName = "ActiveScratchOrg"
+        isActive = true
+        label = "Active Scratch Org"
+        default = false
+      },
+      {
         fullName = "npsp__Address__c"
         isActive = true
         label = "Address"
@@ -191,6 +197,24 @@ type salesforce.Macro {
         default = false
       },
       {
+        fullName = "ChannelProgram"
+        isActive = true
+        label = "Channel Program"
+        default = false
+      },
+      {
+        fullName = "ChannelProgramLevel"
+        isActive = true
+        label = "Channel Program Level"
+        default = false
+      },
+      {
+        fullName = "ChannelProgramMember"
+        isActive = true
+        label = "Channel Program Member"
+        default = false
+      },
+      {
         fullName = "CommSubscription"
         isActive = true
         label = "Communication Subscription"
@@ -212,6 +236,12 @@ type salesforce.Macro {
         fullName = "CommSubscriptionTiming"
         isActive = true
         label = "Communication Subscription Timing"
+        default = false
+      },
+      {
+        fullName = "SRM_Connected_Org__c"
+        isActive = true
+        label = "Connected Org"
         default = false
       },
       {
@@ -359,6 +389,12 @@ type salesforce.Macro {
         default = false
       },
       {
+        fullName = "DelegatedAccount"
+        isActive = true
+        label = "External Managed Account"
+        default = false
+      },
+      {
         fullName = "FeedItem"
         isActive = true
         label = "Feed Item"
@@ -449,6 +485,12 @@ type salesforce.Macro {
         default = false
       },
       {
+        fullName = "items_GWR_ds_google__x"
+        isActive = true
+        label = "items_GWR_ds_google"
+        default = false
+      },
+      {
         fullName = "Lead"
         isActive = true
         label = "Lead"
@@ -488,6 +530,12 @@ type salesforce.Macro {
         fullName = "MessagingEndUser"
         isActive = true
         label = "Messaging User"
+        default = false
+      },
+      {
+        fullName = "NamespaceRegistry"
+        isActive = true
+        label = "Namespace Registry"
         default = false
       },
       {
@@ -536,6 +584,30 @@ type salesforce.Macro {
         fullName = "npsp__Partial_Soft_Credit__c"
         isActive = true
         label = "Partial Soft Credit"
+        default = false
+      },
+      {
+        fullName = "PartnerFundAllocation"
+        isActive = true
+        label = "Partner Fund Allocation"
+        default = false
+      },
+      {
+        fullName = "PartnerFundClaim"
+        isActive = true
+        label = "Partner Fund Claim"
+        default = false
+      },
+      {
+        fullName = "PartnerFundRequest"
+        isActive = true
+        label = "Partner Fund Request"
+        default = false
+      },
+      {
+        fullName = "PartnerMarketingBudget"
+        isActive = true
+        label = "Partner Marketing Budget"
         default = false
       },
       {
@@ -731,6 +803,12 @@ type salesforce.Macro {
         default = false
       },
       {
+        fullName = "ScratchOrgInfo"
+        isActive = true
+        label = "Scratch Org Info"
+        default = false
+      },
+      {
         fullName = "ServiceAppointment"
         isActive = true
         label = "Service Appointment"
@@ -794,12 +872,6 @@ type salesforce.Macro {
         fullName = "User"
         isActive = true
         label = "User"
-        default = false
-      },
-      {
-        fullName = "VoiceCall"
-        isActive = true
-        label = "Voice Call"
         default = false
       },
       {

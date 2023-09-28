@@ -234,7 +234,15 @@ salesforce.RecordType Account_HH_Account {
       picklist = salesforce.Account.field.SLA__c
       values = [
         {
-          fullName = "Bronze"
+          fullName = "Copper"
+          default = false
+        },
+        {
+          fullName = "Gold"
+          default = false
+        },
+        {
+          fullName = "Silver"
           default = false
         },
       ]

@@ -69,6 +69,23 @@ type salesforce.Lead {
     createable = true
     updateable = true
     queryable = true
+    fieldDependency = {
+      controllingField = "Primary__c"
+      valueSettings = [
+        {
+          valueName = "GC1000 series"
+          controllingFieldValue = [
+            "No",
+          ]
+        },
+        {
+          valueName = "GC3000 series"
+          controllingFieldValue = [
+            "Yes",
+          ]
+        },
+      ]
+    }
   }
   salesforce.Text SICCode__c {
     apiName = "Lead.SICCode__c"
@@ -254,5 +271,31 @@ type salesforce.Lead {
         reference = salesforce.InstalledPackage.instance.npsp
       },
     ]
+  }
+  salesforce.Number LeadScore__c {
+    apiName = "Lead.LeadScore__c"
+    defaultValueFormula = "0.3"
+    description = "relative  probability of conversion from 0 to 1"
+    externalId = false
+    inlineHelpText = "between 0 and 1"
+    label = "LeadScore"
+    precision = 3
+    scale = 2
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup Connected_Org__c {
+    apiName = "Lead.Connected_Org__c"
+    deleteConstraint = "SetNull"
+    externalId = false
+    label = "Connected Org"
+    referenceTo = [
+      salesforce.SRM_Connected_Org__c,
+    ]
+    relationshipLabel = "Leads"
+    relationshipName = "Leads"
+    _hidden_value = true
   }
 }

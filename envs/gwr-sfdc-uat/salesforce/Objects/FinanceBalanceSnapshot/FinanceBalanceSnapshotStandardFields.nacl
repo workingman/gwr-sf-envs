@@ -286,6 +286,7 @@ type salesforce.FinanceBalanceSnapshot {
     relationshipName = "LegalEntity"
     referenceTo = [
       salesforce.LegalEntity,
+      salesforce.SRM_Connected_Org__c,
       "npe01__Contacts_And_Orgs_Settings__c",
       "npe01__OppPayment__c",
       "npe01__Payment_Field_Mapping_Settings__c",
@@ -394,6 +395,7 @@ type salesforce.FinanceBalanceSnapshot {
       salesforce.PaymentLineInvoice,
       salesforce.Refund,
       salesforce.RefundLinePayment,
+      salesforce.SRM_Connected_Org__c,
       "npe01__Contacts_And_Orgs_Settings__c",
       "npe01__OppPayment__c",
       "npe01__Payment_Field_Mapping_Settings__c",

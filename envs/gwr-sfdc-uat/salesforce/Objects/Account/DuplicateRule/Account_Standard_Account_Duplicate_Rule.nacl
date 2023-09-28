@@ -3,7 +3,7 @@ salesforce.DuplicateRule Account_Standard_Account_Duplicate_Rule@vuuu {
   actionOnInsert = "Allow"
   actionOnUpdate = "Allow"
   alertText = "Use one of these records?"
-  description = "Identify accounts that duplicate other accounts."
+  description = "Identify accounts that duplicate other accounts. gwr20220801"
   duplicateRuleMatchRules = [
     {
       matchRuleSObjectType = salesforce.Account
@@ -23,4 +23,13 @@ salesforce.DuplicateRule Account_Standard_Account_Duplicate_Rule@vuuu {
     salesforce.Account,
   ]
   _alias = "Account.Standard_Account_Duplicate_Rule"
+  duplicateRuleFilter = {
+    duplicateRuleFilterItems = {
+      field = salesforce.Account.field.NumberOfEmployees
+      operation = "greaterThan"
+      value = "1000"
+      sortOrder = 1
+      table = salesforce.Account
+    }
+  }
 }

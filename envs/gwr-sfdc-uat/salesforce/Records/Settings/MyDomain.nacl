@@ -2,14 +2,14 @@ salesforce.MyDomainSettings {
   fullName = "MyDomain"
   canOnlyLoginWithMyDomainUrl = false
   doesApiLoginRequireOrgDomain = false
-  domainPartition = "develop"
+  domainPartition = "none"
   enableEdgeDuringRollout = "true"
   enableNativeBrowserForAuthOnAndroid = false
   enableNativeBrowserForAuthOnIos = false
   enableShareBrowserSessionAndroidForAuth = "false"
   enableShareBrowserSessionIOSForAuth = "false"
   logRedirections = "false"
-  myDomainName = "salto69-dev-ed"
+  myDomainName = "salto-ae-dev-ed"
   myDomainSuffix = "MySalesforce"
   redirectForceComSiteUrls = "true"
   redirectPriorMyDomain = "true"

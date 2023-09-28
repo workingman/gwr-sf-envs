@@ -433,6 +433,36 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "Field.Case.SuppliedEmail"
+        isActive = true
+        label = "Web Email"
+        default = false
+      },
+      {
+        fullName = "Field.CaseComment.CommentBody"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
+        fullName = "Field.CaseComment.CommentBody.begin"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
+        fullName = "Field.CaseComment.CommentBody.cursor"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
+        fullName = "Field.CaseComment.CommentBody.end"
+        isActive = true
+        label = "Body"
+        default = false
+      },
+      {
         fullName = "Field.ChangeRequest.Category"
         isActive = true
         label = "Category"
@@ -1867,6 +1897,12 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "QuickAction.Case.CaseComment"
+        isActive = true
+        label = "Community Action"
+        default = false
+      },
+      {
         fullName = "QuickAction.Case.LogACall"
         isActive = true
         label = "Log a Call Action"
@@ -1939,6 +1975,12 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "QuickAction.GuestCommunityCase"
+        isActive = true
+        label = "Guest Community Case Action"
+        default = false
+      },
+      {
         fullName = "QuickAction.Incident._LightningUpdateIncident"
         isActive = true
         label = "Update Incident Action"
@@ -1972,6 +2014,12 @@ type salesforce.MacroInstruction {
         fullName = "QuickAction.NewCase"
         isActive = true
         label = "New Case Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.NewCommunityCase"
+        isActive = true
+        label = "New Community Case Action"
         default = false
       },
       {
@@ -2059,7 +2107,19 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "QuickAction.Task.Defer_0"
+        isActive = true
+        label = "Change Date Action"
+        default = false
+      },
+      {
         fullName = "QuickAction.Task.EditDescription"
+        isActive = true
+        label = "Edit Comments Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction.Task.EditDescription_0"
         isActive = true
         label = "Edit Comments Action"
         default = false
@@ -2071,15 +2131,27 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "QuickAction.Task.UpdatePriority_0"
+        isActive = true
+        label = "Change Priority Action"
+        default = false
+      },
+      {
         fullName = "QuickAction.Task.UpdateStatus"
         isActive = true
         label = "Change Status Action"
         default = false
       },
       {
-        fullName = "QuickAction.VoiceCall._LightningCallNotes"
+        fullName = "QuickAction.Task.UpdateStatus_0"
         isActive = true
-        label = "Update Voice Call Action"
+        label = "Change Status Action"
+        default = false
+      },
+      {
+        fullName = "QuickAction._NewQuipDocument"
+        isActive = true
+        label = "New Document Action"
         default = false
       },
       {
@@ -2197,6 +2269,12 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "Tab.ActiveScratchOrg"
+        isActive = true
+        label = "Active Active Scratch Org Tab"
+        default = false
+      },
+      {
         fullName = "Tab.AlternativePaymentMethod"
         isActive = true
         label = "Active Alternative Payment Method Tab"
@@ -2305,6 +2383,24 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "Tab.ChannelProgram"
+        isActive = true
+        label = "Active Channel Program Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ChannelProgramLevel"
+        isActive = true
+        label = "Active Channel Program Level Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ChannelProgramMember"
+        isActive = true
+        label = "Active Channel Program Member Tab"
+        default = false
+      },
+      {
         fullName = "Tab.CollaborationGroup"
         isActive = true
         label = "Active Group Tab"
@@ -2365,6 +2461,12 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "Tab.ContentDocumentListViewMapping"
+        isActive = true
+        label = "Active Quip Document from List View Tab"
+        default = false
+      },
+      {
         fullName = "Tab.Contract"
         isActive = true
         label = "Active Contract Tab"
@@ -2410,6 +2512,12 @@ type salesforce.MacroInstruction {
         fullName = "Tab.DataUsePurpose"
         isActive = true
         label = "Active Data Use Purpose Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.DelegatedAccount"
+        isActive = true
+        label = "Active External Managed Account Tab"
         default = false
       },
       {
@@ -2527,6 +2635,12 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "Tab.NamespaceRegistry"
+        isActive = true
+        label = "Active Namespace Registry Tab"
+        default = false
+      },
+      {
         fullName = "Tab.OperatingHours"
         isActive = true
         label = "Active Operating Hours Tab"
@@ -2548,6 +2662,30 @@ type salesforce.MacroInstruction {
         fullName = "Tab.Order"
         isActive = true
         label = "Active Order Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PartnerFundAllocation"
+        isActive = true
+        label = "Active Partner Fund Allocation Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PartnerFundClaim"
+        isActive = true
+        label = "Active Partner Fund Claim Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PartnerFundRequest"
+        isActive = true
+        label = "Active Partner Fund Request Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PartnerMarketingBudget"
+        isActive = true
+        label = "Active Partner Marketing Budget Tab"
         default = false
       },
       {
@@ -2701,6 +2839,18 @@ type salesforce.MacroInstruction {
         default = false
       },
       {
+        fullName = "Tab.SRM_Connected_Org__c"
+        isActive = true
+        label = "Active Connected Org Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.ScratchOrgInfo"
+        isActive = true
+        label = "Active Scratch Org Info Tab"
+        default = false
+      },
+      {
         fullName = "Tab.ServiceAppointment"
         isActive = true
         label = "Active Service Appointment Tab"
@@ -2758,12 +2908,6 @@ type salesforce.MacroInstruction {
         fullName = "Tab.User"
         isActive = true
         label = "Active User Tab"
-        default = false
-      },
-      {
-        fullName = "Tab.VoiceCall"
-        isActive = true
-        label = "Active Voice Call Tab"
         default = false
       },
       {
@@ -2848,6 +2992,12 @@ type salesforce.MacroInstruction {
         fullName = "Tab.WorkTypeGroupMember"
         isActive = true
         label = "Active Work Type Group Member Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.items_GWR_ds_google__x"
+        isActive = true
+        label = "Active items_GWR_ds_google Tab"
         default = false
       },
       {

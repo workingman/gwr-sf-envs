@@ -1109,6 +1109,15 @@ salesforce.AddressSettings {
       },
       {
         active = true
+        integrationValue = "Cuba"
+        isoCode = "CU"
+        label = "Cuba"
+        orgDefault = false
+        standard = true
+        visible = true
+      },
+      {
+        active = true
         integrationValue = "Cape Verde"
         isoCode = "CV"
         label = "Cape Verde"
@@ -1145,9 +1154,9 @@ salesforce.AddressSettings {
       },
       {
         active = true
-        integrationValue = "Czechia"
+        integrationValue = "Czech Republic"
         isoCode = "CZ"
-        label = "Czechia"
+        label = "Czech Republic"
         orgDefault = false
         standard = true
         visible = true
@@ -2086,6 +2095,15 @@ salesforce.AddressSettings {
       },
       {
         active = true
+        integrationValue = "Iran, Islamic Republic of"
+        isoCode = "IR"
+        label = "Iran, Islamic Republic of"
+        orgDefault = false
+        standard = true
+        visible = true
+      },
+      {
+        active = true
         integrationValue = "Iceland"
         isoCode = "IS"
         label = "Iceland"
@@ -3018,384 +3036,6 @@ salesforce.AddressSettings {
         label = "Japan"
         orgDefault = false
         standard = true
-        states = [
-          {
-            active = true
-            integrationValue = "Hokkaido"
-            isoCode = "01"
-            label = "Hokkaido"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Akita"
-            isoCode = "02"
-            label = "Akita"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Iwate"
-            isoCode = "03"
-            label = "Iwate"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Miyagi"
-            isoCode = "04"
-            label = "Miyagi"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Aichi"
-            isoCode = "05"
-            label = "Aichi"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Yamagata"
-            isoCode = "06"
-            label = "Yamagata"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Fukushima"
-            isoCode = "07"
-            label = "Fukushima"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Ibaraki"
-            isoCode = "08"
-            label = "Ibaraki"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Tochigi"
-            isoCode = "09"
-            label = "Tochigi"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Gunma"
-            isoCode = "10"
-            label = "Gunma"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Saitama"
-            isoCode = "11"
-            label = "Saitama"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Chiba"
-            isoCode = "12"
-            label = "Chiba"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Tokyo"
-            isoCode = "13"
-            label = "Tokyo"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Kanagawa"
-            isoCode = "14"
-            label = "Kanagawa"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Niigata"
-            isoCode = "15"
-            label = "Niigata"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Toyama"
-            isoCode = "16"
-            label = "Toyama"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Ishikawa"
-            isoCode = "17"
-            label = "Ishikawa"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Fukui"
-            isoCode = "18"
-            label = "Fukui"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Yamanashi"
-            isoCode = "19"
-            label = "Yamanashi"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Nagano"
-            isoCode = "20"
-            label = "Nagano"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Gifu"
-            isoCode = "21"
-            label = "Gifu"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Shizuoka"
-            isoCode = "22"
-            label = "Shizuoka"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Aomori"
-            isoCode = "23"
-            label = "Aomori"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Mie"
-            isoCode = "24"
-            label = "Mie"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Shiga"
-            isoCode = "25"
-            label = "Shiga"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Kyoto"
-            isoCode = "26"
-            label = "Kyoto"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Osaka"
-            isoCode = "27"
-            label = "Osaka"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Hyogo"
-            isoCode = "28"
-            label = "Hyogo"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Nara"
-            isoCode = "29"
-            label = "Nara"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Wakayama"
-            isoCode = "30"
-            label = "Wakayama"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Tottori"
-            isoCode = "31"
-            label = "Tottori"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Shimane"
-            isoCode = "32"
-            label = "Shimane"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Okayama"
-            isoCode = "33"
-            label = "Okayama"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Hiroshima"
-            isoCode = "34"
-            label = "Hiroshima"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Yamaguchi"
-            isoCode = "35"
-            label = "Yamaguchi"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Tokushima"
-            isoCode = "36"
-            label = "Tokushima"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Kagawa"
-            isoCode = "37"
-            label = "Kagawa"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Ehime"
-            isoCode = "38"
-            label = "Ehime"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Kochi"
-            isoCode = "39"
-            label = "Kochi"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Fukuoka"
-            isoCode = "40"
-            label = "Fukuoka"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Saga"
-            isoCode = "41"
-            label = "Saga"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Nagasaki"
-            isoCode = "42"
-            label = "Nagasaki"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Kumamoto"
-            isoCode = "43"
-            label = "Kumamoto"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Oita"
-            isoCode = "44"
-            label = "Oita"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Miyazaki"
-            isoCode = "45"
-            label = "Miyazaki"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Kagoshima"
-            isoCode = "46"
-            label = "Kagoshima"
-            standard = true
-            visible = true
-          },
-          {
-            active = true
-            integrationValue = "Okinawa"
-            isoCode = "47"
-            label = "Okinawa"
-            standard = true
-            visible = true
-          },
-        ]
         visible = true
       },
       {
@@ -3448,6 +3088,15 @@ salesforce.AddressSettings {
         integrationValue = "Saint Kitts and Nevis"
         isoCode = "KN"
         label = "Saint Kitts and Nevis"
+        orgDefault = false
+        standard = true
+        visible = true
+      },
+      {
+        active = true
+        integrationValue = "Korea, Democratic People's Republic of"
+        isoCode = "KP"
+        label = "Korea, Democratic People's Republic of"
         orgDefault = false
         standard = true
         visible = true
@@ -3643,9 +3292,9 @@ salesforce.AddressSettings {
       },
       {
         active = true
-        integrationValue = "North Macedonia"
+        integrationValue = "Macedonia, the former Yugoslav Republic of"
         isoCode = "MK"
-        label = "North Macedonia"
+        label = "Macedonia, the former Yugoslav Republic of"
         orgDefault = false
         standard = true
         visible = true
@@ -4342,6 +3991,15 @@ salesforce.AddressSettings {
       },
       {
         active = true
+        integrationValue = "Sudan"
+        isoCode = "SD"
+        label = "Sudan"
+        orgDefault = false
+        standard = true
+        visible = true
+      },
+      {
+        active = true
         integrationValue = "Sweden"
         isoCode = "SE"
         label = "Sweden"
@@ -4477,9 +4135,18 @@ salesforce.AddressSettings {
       },
       {
         active = true
-        integrationValue = "Eswatini"
+        integrationValue = "Syrian Arab Republic"
+        isoCode = "SY"
+        label = "Syrian Arab Republic"
+        orgDefault = false
+        standard = true
+        visible = true
+      },
+      {
+        active = true
+        integrationValue = "Swaziland"
         isoCode = "SZ"
-        label = "Eswatini"
+        label = "Swaziland"
         orgDefault = false
         standard = true
         visible = true
@@ -4585,9 +4252,9 @@ salesforce.AddressSettings {
       },
       {
         active = true
-        integrationValue = "Türkiye"
+        integrationValue = "Turkey"
         isoCode = "TR"
-        label = "Türkiye"
+        label = "Turkey"
         orgDefault = false
         standard = true
         visible = true
@@ -5247,15 +4914,6 @@ salesforce.AddressSettings {
         integrationValue = "Samoa"
         isoCode = "WS"
         label = "Samoa"
-        orgDefault = false
-        standard = true
-        visible = true
-      },
-      {
-        active = true
-        integrationValue = "Kosovo"
-        isoCode = "XK"
-        label = "Kosovo"
         orgDefault = false
         standard = true
         visible = true

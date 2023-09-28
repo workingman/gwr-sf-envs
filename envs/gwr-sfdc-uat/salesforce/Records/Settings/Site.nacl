@@ -3,4 +3,5 @@ salesforce.SiteSettings {
   enableProxyLoginICHeader = true
   enableTopicsInSites = false
   _alias = "Site"
+  enableEnhancedSitesAndContentPlatform = "true"
 }

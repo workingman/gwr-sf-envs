@@ -1,14 +1,13 @@
 type salesforce.Incident {
   salesforce.Lookup BusinessHoursId {
     apiName = "Incident.BusinessHoursId"
-    relationshipName = "BusinessHours"
-    referenceTo = [
-      "BusinessHours",
-    ]
-    label = "Business Hours ID"
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
+    
+    
+    
+    _hidden_value = true
   }
   salesforce.Picklist Category {
     apiName = "Incident.Category"
@@ -41,14 +40,13 @@ type salesforce.Incident {
   }
   salesforce.Lookup EntitlementId {
     apiName = "Incident.EntitlementId"
-    relationshipName = "Entitlement"
-    referenceTo = [
-      salesforce.Entitlement,
-    ]
-    label = "Entitlement ID"
-    createable = true
-    updateable = true
-    queryable = true
+    
+    
+    
+    
+    
+    
+    _hidden_value = true
   }
   salesforce.Picklist Impact {
     apiName = "Incident.Impact"
@@ -60,13 +58,8 @@ type salesforce.Incident {
     queryable = true
     valueSetName = salesforce.StandardValueSet.instance.CasePriority
   }
-  salesforce.Checkbox IsClosed {
+  salesforce.Unknown IsClosed {
     apiName = "Incident.IsClosed"
-    defaultValue = false
-    label = "Incident Closed"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsMajorIncident {
@@ -77,23 +70,12 @@ type salesforce.Incident {
     updateable = true
     queryable = true
   }
-  salesforce.Checkbox IsStopped {
+  salesforce.Unknown IsStopped {
     apiName = "Incident.IsStopped"
-    defaultValue = false
-    label = "Incident Paused"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
-  salesforce.Text MilestoneStatus {
+  salesforce.Unknown MilestoneStatus {
     apiName = "Incident.MilestoneStatus"
-    length = 30
-    label = "Milestone Status"
-    createable = false
-    updateable = false
-    unique = false
-    caseSensitive = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {
@@ -198,20 +180,13 @@ type salesforce.Incident {
     updateable = true
     queryable = true
   }
-  salesforce.DateTime SlaExitDate {
+  salesforce.Unknown SlaExitDate {
     apiName = "Incident.SlaExitDate"
-    label = "Entitlement Process End Time"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
-  salesforce.DateTime SlaStartDate {
+  salesforce.Unknown SlaStartDate {
     apiName = "Incident.SlaStartDate"
-    label = "Entitlement Process Start Time"
-    createable = true
-    updateable = true
-    queryable = true
+    _hidden_value = true
   }
   salesforce.DateTime StartDateTime {
     apiName = "Incident.StartDateTime"
@@ -257,12 +232,6 @@ type salesforce.Incident {
         fullName = "Problem Created"
         isActive = true
         label = "Problem Created"
-        default = false
-      },
-      {
-        fullName = "Closed"
-        isActive = true
-        label = "Closed"
         default = false
       },
     ]
@@ -326,12 +295,8 @@ type salesforce.Incident {
     queryable = true
     _hidden_value = true
   }
-  salesforce.DateTime StopStartDate {
+  salesforce.Unknown StopStartDate {
     apiName = "Incident.StopStartDate"
-    label = "Incident Paused Since"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist SubCategory {

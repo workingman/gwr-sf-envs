@@ -27,6 +27,18 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
+        name = salesforce.AccountBrand
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.ActiveScratchOrg
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
         name = salesforce.Activity
         resultsPerPageCount = 25
       },
@@ -118,6 +130,18 @@ salesforce.SearchSettings {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
         name = "CaseComment"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.ChannelProgram
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.ChannelProgramLevel
         resultsPerPageCount = 25
       },
       {
@@ -237,6 +261,12 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
+        name = salesforce.DelegatedAccount
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
         name = "Document"
         resultsPerPageCount = 25
       },
@@ -333,6 +363,12 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
+        name = salesforce.NamespaceRegistry
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
         name = "Note"
         resultsPerPageCount = 25
       },
@@ -346,6 +382,30 @@ salesforce.SearchSettings {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
         name = salesforce.Order
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.PartnerFundAllocation
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.PartnerFundClaim
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.PartnerFundRequest
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.PartnerMarketingBudget
         resultsPerPageCount = 25
       },
       {
@@ -406,6 +466,18 @@ salesforce.SearchSettings {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
         name = "Report"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.SRM_Connected_Org__c
+        resultsPerPageCount = 0
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.ScratchOrgInfo
         resultsPerPageCount = 25
       },
       {

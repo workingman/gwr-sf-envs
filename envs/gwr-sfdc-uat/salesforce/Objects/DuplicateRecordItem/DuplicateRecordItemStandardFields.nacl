@@ -19,6 +19,7 @@ type salesforce.DuplicateRecordItem {
       salesforce.Contact,
       salesforce.Individual,
       salesforce.Lead,
+      salesforce.SRM_Connected_Org__c,
       "npe01__Contacts_And_Orgs_Settings__c",
       "npe01__OppPayment__c",
       "npe01__Payment_Field_Mapping_Settings__c",

@@ -1441,4 +1441,14 @@ ISBLANK(npe03__Recurring_Donation__c),
       },
     ]
   }
+  salesforce.Checkbox GWR_oppty_chkbox__c {
+    apiName = "Opportunity.GWR_oppty_chkbox__c"
+    defaultValue = false
+    externalId = false
+    label = "GWR oppty chkbox"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

@@ -77,4 +77,14 @@ type salesforce.Topic {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Lookup NetworkId {
+    apiName = "Topic.NetworkId"
+    referenceTo = [
+      salesforce.Network,
+    ]
+    label = "Network ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
 }

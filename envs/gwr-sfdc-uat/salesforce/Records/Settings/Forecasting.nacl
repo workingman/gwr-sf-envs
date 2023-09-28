@@ -98,503 +98,6 @@ salesforce.ForecastingSettings {
   ]
   forecastingTypeSettings = [
     {
-      active = false
-      displayedCategoryApiNames = [
-        "closedonly",
-        "commitonly",
-        "bestcaseonly",
-        "pipelineonly",
-      ]
-      forecastedCategoryApiNames = [
-        "commitonly",
-        "closedonly",
-        "pipelineonly",
-        "bestcaseonly",
-      ]
-      forecastingDateType = "OpportunityCloseDate"
-      hasProductFamily = true
-      isAmount = false
-      isAvailable = true
-      isQuantity = true
-      masterLabel = "Product Families"
-      name = "OpportunityLineItemQuantity"
-      opportunityListFieldsLabelMappings = [
-        {
-          field = "OPPORTUNITY.NAME"
-          label = "Opportunity Name"
-        },
-        {
-          field = "ACCOUNT.NAME"
-          label = "Account Name"
-        },
-        {
-          field = "OPPORTUNITY.QUANTITY"
-          label = "Quantity"
-        },
-        {
-          field = "OPPORTUNITY.CLOSE_DATE"
-          label = "Close Date"
-        },
-        {
-          field = "OPPORTUNITY.STAGE_NAME"
-          label = "Stage"
-        },
-        {
-          field = "OPPORTUNITY.PROBABILITY"
-          label = "Probability (%)"
-        },
-        {
-          field = "FORECAST_CATEGORY"
-          label = "Forecast Category"
-        },
-        {
-          field = "FULL_NAME"
-          label = "Owner Full Name"
-        },
-        {
-          field = "OPPORTUNITY.AMOUNT"
-          label = "Amount"
-        },
-        {
-          field = "CORE.USERS.ALIAS"
-          label = "Opportunity Owner Alias"
-        },
-        {
-          field = "CORE.USERS.FIRST_NAME"
-          label = "Owner First Name"
-        },
-        {
-          field = "CORE.USERS.LAST_NAME"
-          label = "Owner Last Name"
-        },
-        {
-          field = "DESCRIPTION"
-          label = "Description"
-        },
-        {
-          field = "OPPORTUNITY.EXP_AMOUNT"
-          label = "Expected Revenue"
-        },
-        {
-          field = "OPPORTUNITY.LEAD_SOURCE"
-          label = "Lead Source"
-        },
-        {
-          field = "OPPORTUNITY.NEXT_STEP"
-          label = "Next Step"
-        },
-        {
-          field = "OPPORTUNITY.PRIVATE"
-          label = "Private"
-        },
-        {
-          field = "OPPORTUNITY.TYPE"
-          label = "Type"
-        },
-        {
-          field = "UPDATEDBY_USER.ALIAS"
-          label = "Last Modified By Alias"
-        },
-        {
-          field = "CREATEDBY_USER.ALIAS"
-          label = "Created By Alias"
-        },
-        {
-          field = "OPPORTUNITY.CLOSED"
-          label = "Closed"
-        },
-        {
-          field = "OPPORTUNITY.WON"
-          label = "Won"
-        },
-        {
-          field = "ACCOUNT.SITE"
-          label = "Account Site"
-        },
-        {
-          field = "OPPORTUNITY.FISCAL_YEAR"
-          label = "Fiscal Year"
-        },
-        {
-          field = "OPPORTUNITY.FISCAL_QUARTER"
-          label = "Fiscal Quarter"
-        },
-        {
-          field = "OPPORTUNITY.FISCAL_PERIOD"
-          label = "Fiscal Period"
-        },
-        {
-          field = "OPPORTUNITY.RECORDTYPE"
-          label = "Opportunity Record Type"
-        },
-        {
-          field = "OPPORTUNITY.LAST_ACTIVITY"
-          label = "Last Activity"
-        },
-        {
-          field = "OPPORTUNITY.CREATED_DATE"
-          label = "Created Date"
-        },
-        {
-          field = "OPPORTUNITY.LAST_UPDATE"
-          label = "Last Modified Date"
-        },
-        {
-          field = "Opportunity.npo02__systemHouseholdContactRoleProcessor__c"
-          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
-        },
-        {
-          field = "Opportunity.npsp__Acknowledgment_Date__c"
-          label = "Acknowledgment Date"
-        },
-        {
-          field = "Opportunity.npsp__Acknowledgment_Status__c"
-          label = "Acknowledgment Status"
-        },
-        {
-          field = "Opportunity.npsp__Ask_Date__c"
-          label = "Ask Date"
-        },
-        {
-          field = "Opportunity.npsp__Batch__c"
-          label = "Batch"
-        },
-        {
-          field = "Opportunity.npsp__Batch_Number__c"
-          label = "Batch Number"
-        },
-        {
-          field = "Opportunity.npsp__Closed_Lost_Reason__c"
-          label = "Closed Lost Reason"
-        },
-        {
-          field = "Opportunity.npo02__CombinedRollupFieldset__c"
-          label = "Combined Rollup Fieldset"
-        },
-        {
-          field = "Opportunity.npe01__Contact_Id_for_Role__c"
-          label = "Contact Id for Role"
-        },
-        {
-          field = "Opportunity.CurrentGenerators__c"
-          label = "Current Generator(s)"
-        },
-        {
-          field = "Opportunity.DeliveryInstallationStatus__c"
-          label = "Delivery/Installation Status"
-        },
-        {
-          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
-          label = "Disable Contact Role Automation"
-        },
-        {
-          field = "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c"
-          label = "Do Not Automatically Create Payment"
-        },
-        {
-          field = "Opportunity.npsp__CommitmentId__c"
-          label = "Elevate Recurring Id"
-        },
-        {
-          field = "Opportunity.npsp__Fair_Market_Value__c"
-          label = "Fair Market Value"
-        },
-        {
-          field = "Opportunity.npsp__Gift_Strategy__c"
-          label = "Gift Strategy"
-        },
-        {
-          field = "Opportunity.npsp__Grant_Contract_Date__c"
-          label = "Grant Contract Date"
-        },
-        {
-          field = "Opportunity.npsp__Grant_Contract_Number__c"
-          label = "Grant Contract Number"
-        },
-        {
-          field = "Opportunity.npsp__Grant_Period_End_Date__c"
-          label = "Grant Period End Date"
-        },
-        {
-          field = "Opportunity.npsp__Grant_Period_Start_Date__c"
-          label = "Grant Period Start Date"
-        },
-        {
-          field = "Opportunity.npsp__Grant_Requirements_Website__c"
-          label = "Grant Requirements Website"
-        },
-        {
-          field = "Opportunity.npsp__Honoree_Contact__c"
-          label = "Honoree Contact"
-        },
-        {
-          field = "Opportunity.npsp__Honoree_Information__c"
-          label = "Honoree Information"
-        },
-        {
-          field = "Opportunity.npsp__Honoree_Name__c"
-          label = "Honoree Name"
-        },
-        {
-          field = "Opportunity.npsp__In_Kind_Description__c"
-          label = "In-Kind Description"
-        },
-        {
-          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
-          label = "In-Kind Donor Declared Value"
-        },
-        {
-          field = "Opportunity.npsp__In_Kind_Type__c"
-          label = "In-Kind Type"
-        },
-        {
-          field = "Opportunity.npsp__Is_Grant_Renewal__c"
-          label = "Is Grant Renewal"
-        },
-        {
-          field = "Opportunity.npe01__Is_Opp_From_Individual__c"
-          label = "Is Opp From Individual"
-        },
-        {
-          field = "Opportunity.MainCompetitors__c"
-          label = "Main Competitor(s)"
-        },
-        {
-          field = "Opportunity.npsp__Matching_Gift__c"
-          label = "Matching Gift"
-        },
-        {
-          field = "Opportunity.npsp__Matching_Gift_Account__c"
-          label = "Matching Gift Account"
-        },
-        {
-          field = "Opportunity.npsp__Matching_Gift_Employer__c"
-          label = "Matching Gift Employer"
-        },
-        {
-          field = "Opportunity.npsp__Matching_Gift_Status__c"
-          label = "Matching Gift Status"
-        },
-        {
-          field = "Opportunity.npe01__Member_Level__c"
-          label = "Member Level"
-        },
-        {
-          field = "Opportunity.npe01__Membership_End_Date__c"
-          label = "Membership End Date"
-        },
-        {
-          field = "Opportunity.npe01__Membership_Origin__c"
-          label = "Membership Origin"
-        },
-        {
-          field = "Opportunity.npe01__Membership_Start_Date__c"
-          label = "Membership Start Date"
-        },
-        {
-          field = "Opportunity.npsp__Next_Grant_Deadline_Due_Date__c"
-          label = "Next Deliverable Date"
-        },
-        {
-          field = "Opportunity.npsp__Notification_Message__c"
-          label = "Notification Message"
-        },
-        {
-          field = "Opportunity.npsp__Notification_Preference__c"
-          label = "Notification Preference"
-        },
-        {
-          field = "Opportunity.npsp__Notification_Recipient_Contact__c"
-          label = "Notification Recipient Contact"
-        },
-        {
-          field = "Opportunity.npsp__Notification_Recipient_Email__c"
-          label = "Notification Recipient Email"
-        },
-        {
-          field = "Opportunity.npsp__Notification_Recipient_Information__c"
-          label = "Notification Recipient Information"
-        },
-        {
-          field = "Opportunity.npsp__Notification_Recipient_Name__c"
-          label = "Notification Recipient Name"
-        },
-        {
-          field = "Opportunity.npe01__Number_of_Payments__c"
-          label = "Number of Payments"
-        },
-        {
-          field = "Opportunity.OrderNumber__c"
-          label = "Order Number"
-        },
-        {
-          field = "Opportunity.npe01__Payments_Made__c"
-          label = "Payment Amount Received"
-        },
-        {
-          field = "Opportunity.npe01__Amount_Written_Off__c"
-          label = "Payment Writeoff Amount"
-        },
-        {
-          field = "Opportunity.npsp__Previous_Grant_Opportunity__c"
-          label = "Previous Grant/Gift Opportunity"
-        },
-        {
-          field = "Opportunity.npsp__Primary_Contact__c"
-          label = "Primary Contact"
-        },
-        {
-          field = "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c"
-          label = "Primary Contact Campaign Member Status"
-        },
-        {
-          field = "Opportunity.npsp__Grant_Program_Area_s__c"
-          label = "Program Areas"
-        },
-        {
-          field = "Opportunity.npsp__Qualified_Date__c"
-          label = "Qualified Date"
-        },
-        {
-          field = "Opportunity.npe03__Recurring_Donation__c"
-          label = "Recurring Donation"
-        },
-        {
-          field = "Opportunity.npsp__Recurring_Donation_Installment_Name__c"
-          label = "Recurring Donation Installment Name"
-        },
-        {
-          field = "Opportunity.npsp__Recurring_Donation_Installment_Number__c"
-          label = "Recurring Donation Installment Number"
-        },
-        {
-          field = "Opportunity.npe01__Amount_Outstanding__c"
-          label = "Remaining Balance"
-        },
-        {
-          field = "Opportunity.npsp__Requested_Amount__c"
-          label = "Requested Amount"
-        },
-        {
-          field = "Opportunity.TrackingNumber__c"
-          label = "Tracking Number"
-        },
-        {
-          field = "Opportunity.npsp__Tribute_Notification_Date__c"
-          label = "Tribute Notification Date"
-        },
-        {
-          field = "Opportunity.npsp__Tribute_Notification_Status__c"
-          label = "Tribute Notification Status"
-        },
-        {
-          field = "Opportunity.npsp__Tribute_Type__c"
-          label = "Tribute Type"
-        },
-      ]
-      opportunityListFieldsSelectedSettings = {
-        field = [
-          "OPPORTUNITY.NAME",
-          "ACCOUNT.NAME",
-          "OPPORTUNITY.QUANTITY",
-          "OPPORTUNITY.CLOSE_DATE",
-          "OPPORTUNITY.STAGE_NAME",
-          "OPPORTUNITY.PROBABILITY",
-          "FORECAST_CATEGORY",
-          "FULL_NAME",
-        ]
-      }
-      opportunityListFieldsUnselectedSettings = {
-        field = [
-          "OPPORTUNITY.AMOUNT",
-          "CORE.USERS.ALIAS",
-          "CORE.USERS.FIRST_NAME",
-          "CORE.USERS.LAST_NAME",
-          "DESCRIPTION",
-          "OPPORTUNITY.EXP_AMOUNT",
-          "OPPORTUNITY.LEAD_SOURCE",
-          "OPPORTUNITY.NEXT_STEP",
-          "OPPORTUNITY.PRIVATE",
-          "OPPORTUNITY.TYPE",
-          "UPDATEDBY_USER.ALIAS",
-          "CREATEDBY_USER.ALIAS",
-          "OPPORTUNITY.CLOSED",
-          "OPPORTUNITY.WON",
-          "ACCOUNT.SITE",
-          "OPPORTUNITY.FISCAL_YEAR",
-          "OPPORTUNITY.FISCAL_QUARTER",
-          "OPPORTUNITY.FISCAL_PERIOD",
-          "OPPORTUNITY.RECORDTYPE",
-          "OPPORTUNITY.LAST_ACTIVITY",
-          "OPPORTUNITY.CREATED_DATE",
-          "OPPORTUNITY.LAST_UPDATE",
-          "Opportunity.npo02__systemHouseholdContactRoleProcessor__c",
-          "Opportunity.npsp__Acknowledgment_Date__c",
-          "Opportunity.npsp__Acknowledgment_Status__c",
-          "Opportunity.npsp__Ask_Date__c",
-          "Opportunity.npsp__Batch__c",
-          "Opportunity.npsp__Batch_Number__c",
-          "Opportunity.npsp__Closed_Lost_Reason__c",
-          "Opportunity.npo02__CombinedRollupFieldset__c",
-          "Opportunity.npe01__Contact_Id_for_Role__c",
-          "Opportunity.CurrentGenerators__c",
-          "Opportunity.DeliveryInstallationStatus__c",
-          "Opportunity.npsp__DisableContactRoleAutomation__c",
-          "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
-          "Opportunity.npsp__CommitmentId__c",
-          "Opportunity.npsp__Fair_Market_Value__c",
-          "Opportunity.npsp__Gift_Strategy__c",
-          "Opportunity.npsp__Grant_Contract_Date__c",
-          "Opportunity.npsp__Grant_Contract_Number__c",
-          "Opportunity.npsp__Grant_Period_End_Date__c",
-          "Opportunity.npsp__Grant_Period_Start_Date__c",
-          "Opportunity.npsp__Grant_Requirements_Website__c",
-          "Opportunity.npsp__Honoree_Contact__c",
-          "Opportunity.npsp__Honoree_Information__c",
-          "Opportunity.npsp__Honoree_Name__c",
-          "Opportunity.npsp__In_Kind_Description__c",
-          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
-          "Opportunity.npsp__In_Kind_Type__c",
-          "Opportunity.npsp__Is_Grant_Renewal__c",
-          "Opportunity.npe01__Is_Opp_From_Individual__c",
-          "Opportunity.MainCompetitors__c",
-          "Opportunity.npsp__Matching_Gift__c",
-          "Opportunity.npsp__Matching_Gift_Account__c",
-          "Opportunity.npsp__Matching_Gift_Employer__c",
-          "Opportunity.npsp__Matching_Gift_Status__c",
-          "Opportunity.npe01__Member_Level__c",
-          "Opportunity.npe01__Membership_End_Date__c",
-          "Opportunity.npe01__Membership_Origin__c",
-          "Opportunity.npe01__Membership_Start_Date__c",
-          "Opportunity.npsp__Next_Grant_Deadline_Due_Date__c",
-          "Opportunity.npsp__Notification_Message__c",
-          "Opportunity.npsp__Notification_Preference__c",
-          "Opportunity.npsp__Notification_Recipient_Contact__c",
-          "Opportunity.npsp__Notification_Recipient_Email__c",
-          "Opportunity.npsp__Notification_Recipient_Information__c",
-          "Opportunity.npsp__Notification_Recipient_Name__c",
-          "Opportunity.npe01__Number_of_Payments__c",
-          "Opportunity.OrderNumber__c",
-          "Opportunity.npe01__Payments_Made__c",
-          "Opportunity.npe01__Amount_Written_Off__c",
-          "Opportunity.npsp__Previous_Grant_Opportunity__c",
-          "Opportunity.npsp__Primary_Contact__c",
-          "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
-          "Opportunity.npsp__Grant_Program_Area_s__c",
-          "Opportunity.npsp__Qualified_Date__c",
-          "Opportunity.npe03__Recurring_Donation__c",
-          "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
-          "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
-          "Opportunity.npe01__Amount_Outstanding__c",
-          "Opportunity.npsp__Requested_Amount__c",
-          "Opportunity.TrackingNumber__c",
-          "Opportunity.npsp__Tribute_Notification_Date__c",
-          "Opportunity.npsp__Tribute_Notification_Status__c",
-          "Opportunity.npsp__Tribute_Type__c",
-        ]
-      }
-    },
-    {
       active = true
       displayedCategoryApiNames = [
         "closedonly",
@@ -821,6 +324,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -1046,6 +553,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -1318,6 +826,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -1543,6 +1055,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -1819,6 +1332,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -2045,6 +1562,509 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
+          "Opportunity.npsp__Honoree_Contact__c",
+          "Opportunity.npsp__Honoree_Information__c",
+          "Opportunity.npsp__Honoree_Name__c",
+          "Opportunity.npsp__In_Kind_Description__c",
+          "Opportunity.npsp__In_Kind_Donor_Declared_Value__c",
+          "Opportunity.npsp__In_Kind_Type__c",
+          "Opportunity.npsp__Is_Grant_Renewal__c",
+          "Opportunity.npe01__Is_Opp_From_Individual__c",
+          "Opportunity.MainCompetitors__c",
+          "Opportunity.npsp__Matching_Gift__c",
+          "Opportunity.npsp__Matching_Gift_Account__c",
+          "Opportunity.npsp__Matching_Gift_Employer__c",
+          "Opportunity.npsp__Matching_Gift_Status__c",
+          "Opportunity.npe01__Member_Level__c",
+          "Opportunity.npe01__Membership_End_Date__c",
+          "Opportunity.npe01__Membership_Origin__c",
+          "Opportunity.npe01__Membership_Start_Date__c",
+          "Opportunity.npsp__Next_Grant_Deadline_Due_Date__c",
+          "Opportunity.npsp__Notification_Message__c",
+          "Opportunity.npsp__Notification_Preference__c",
+          "Opportunity.npsp__Notification_Recipient_Contact__c",
+          "Opportunity.npsp__Notification_Recipient_Email__c",
+          "Opportunity.npsp__Notification_Recipient_Information__c",
+          "Opportunity.npsp__Notification_Recipient_Name__c",
+          "Opportunity.npe01__Number_of_Payments__c",
+          "Opportunity.OrderNumber__c",
+          "Opportunity.npe01__Payments_Made__c",
+          "Opportunity.npe01__Amount_Written_Off__c",
+          "Opportunity.npsp__Previous_Grant_Opportunity__c",
+          "Opportunity.npsp__Primary_Contact__c",
+          "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c",
+          "Opportunity.npsp__Grant_Program_Area_s__c",
+          "Opportunity.npsp__Qualified_Date__c",
+          "Opportunity.npe03__Recurring_Donation__c",
+          "Opportunity.npsp__Recurring_Donation_Installment_Name__c",
+          "Opportunity.npsp__Recurring_Donation_Installment_Number__c",
+          "Opportunity.npe01__Amount_Outstanding__c",
+          "Opportunity.npsp__Requested_Amount__c",
+          "Opportunity.TrackingNumber__c",
+          "Opportunity.npsp__Tribute_Notification_Date__c",
+          "Opportunity.npsp__Tribute_Notification_Status__c",
+          "Opportunity.npsp__Tribute_Type__c",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "OpportunityCloseDate"
+      hasProductFamily = true
+      isAmount = false
+      isAvailable = true
+      isQuantity = true
+      masterLabel = "Product Families"
+      name = "OpportunityLineItemQuantity"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "Opportunity.npo02__systemHouseholdContactRoleProcessor__c"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "Opportunity.npsp__Acknowledgment_Date__c"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "Opportunity.npsp__Acknowledgment_Status__c"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "Opportunity.npsp__Ask_Date__c"
+          label = "Ask Date"
+        },
+        {
+          field = "Opportunity.npsp__Batch__c"
+          label = "Batch"
+        },
+        {
+          field = "Opportunity.npsp__Batch_Number__c"
+          label = "Batch Number"
+        },
+        {
+          field = "Opportunity.npsp__Closed_Lost_Reason__c"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "Opportunity.npo02__CombinedRollupFieldset__c"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "Opportunity.npe01__Contact_Id_for_Role__c"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "Opportunity.npsp__DisableContactRoleAutomation__c"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "Opportunity.npsp__CommitmentId__c"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "Opportunity.npsp__Fair_Market_Value__c"
+          label = "Fair Market Value"
+        },
+        {
+          field = "Opportunity.npsp__Gift_Strategy__c"
+          label = "Gift Strategy"
+        },
+        {
+          field = "Opportunity.npsp__Grant_Contract_Date__c"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "Opportunity.npsp__Grant_Contract_Number__c"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "Opportunity.npsp__Grant_Period_End_Date__c"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "Opportunity.npsp__Grant_Period_Start_Date__c"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "Opportunity.npsp__Grant_Requirements_Website__c"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
+          field = "Opportunity.npsp__Honoree_Contact__c"
+          label = "Honoree Contact"
+        },
+        {
+          field = "Opportunity.npsp__Honoree_Information__c"
+          label = "Honoree Information"
+        },
+        {
+          field = "Opportunity.npsp__Honoree_Name__c"
+          label = "Honoree Name"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Description__c"
+          label = "In-Kind Description"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Donor_Declared_Value__c"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "Opportunity.npsp__In_Kind_Type__c"
+          label = "In-Kind Type"
+        },
+        {
+          field = "Opportunity.npsp__Is_Grant_Renewal__c"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "Opportunity.npe01__Is_Opp_From_Individual__c"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift__c"
+          label = "Matching Gift"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Account__c"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Employer__c"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "Opportunity.npsp__Matching_Gift_Status__c"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "Opportunity.npe01__Member_Level__c"
+          label = "Member Level"
+        },
+        {
+          field = "Opportunity.npe01__Membership_End_Date__c"
+          label = "Membership End Date"
+        },
+        {
+          field = "Opportunity.npe01__Membership_Origin__c"
+          label = "Membership Origin"
+        },
+        {
+          field = "Opportunity.npe01__Membership_Start_Date__c"
+          label = "Membership Start Date"
+        },
+        {
+          field = "Opportunity.npsp__Next_Grant_Deadline_Due_Date__c"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Message__c"
+          label = "Notification Message"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Preference__c"
+          label = "Notification Preference"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Contact__c"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Email__c"
+          label = "Notification Recipient Email"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Information__c"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "Opportunity.npsp__Notification_Recipient_Name__c"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "Opportunity.npe01__Number_of_Payments__c"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "Opportunity.npe01__Payments_Made__c"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "Opportunity.npe01__Amount_Written_Off__c"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "Opportunity.npsp__Previous_Grant_Opportunity__c"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "Opportunity.npsp__Primary_Contact__c"
+          label = "Primary Contact"
+        },
+        {
+          field = "Opportunity.npsp__Primary_Contact_Campaign_Member_Status__c"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "Opportunity.npsp__Grant_Program_Area_s__c"
+          label = "Program Areas"
+        },
+        {
+          field = "Opportunity.npsp__Qualified_Date__c"
+          label = "Qualified Date"
+        },
+        {
+          field = "Opportunity.npe03__Recurring_Donation__c"
+          label = "Recurring Donation"
+        },
+        {
+          field = "Opportunity.npsp__Recurring_Donation_Installment_Name__c"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "Opportunity.npsp__Recurring_Donation_Installment_Number__c"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "Opportunity.npe01__Amount_Outstanding__c"
+          label = "Remaining Balance"
+        },
+        {
+          field = "Opportunity.npsp__Requested_Amount__c"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Date__c"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Notification_Status__c"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "Opportunity.npsp__Tribute_Type__c"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "Opportunity.npo02__systemHouseholdContactRoleProcessor__c",
+          "Opportunity.npsp__Acknowledgment_Date__c",
+          "Opportunity.npsp__Acknowledgment_Status__c",
+          "Opportunity.npsp__Ask_Date__c",
+          "Opportunity.npsp__Batch__c",
+          "Opportunity.npsp__Batch_Number__c",
+          "Opportunity.npsp__Closed_Lost_Reason__c",
+          "Opportunity.npo02__CombinedRollupFieldset__c",
+          "Opportunity.npe01__Contact_Id_for_Role__c",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "Opportunity.npsp__DisableContactRoleAutomation__c",
+          "Opportunity.npe01__Do_Not_Automatically_Create_Payment__c",
+          "Opportunity.npsp__CommitmentId__c",
+          "Opportunity.npsp__Fair_Market_Value__c",
+          "Opportunity.npsp__Gift_Strategy__c",
+          "Opportunity.npsp__Grant_Contract_Date__c",
+          "Opportunity.npsp__Grant_Contract_Number__c",
+          "Opportunity.npsp__Grant_Period_End_Date__c",
+          "Opportunity.npsp__Grant_Period_Start_Date__c",
+          "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -2321,6 +2341,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -2547,6 +2571,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -2819,6 +2844,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -3044,6 +3073,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -3320,6 +3350,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -3546,6 +3580,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -3818,6 +3853,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -4043,6 +4082,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -4319,6 +4359,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -4545,6 +4589,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -4817,6 +4862,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -5042,6 +5091,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -5318,6 +5368,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -5544,6 +5598,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",
@@ -5816,6 +5871,10 @@ salesforce.ForecastingSettings {
           label = "Grant Requirements Website"
         },
         {
+          field = "Opportunity.GWR_oppty_chkbox__c"
+          label = "GWR oppty chkbox"
+        },
+        {
           field = "Opportunity.npsp__Honoree_Contact__c"
           label = "Honoree Contact"
         },
@@ -6041,6 +6100,7 @@ salesforce.ForecastingSettings {
           "Opportunity.npsp__Grant_Period_End_Date__c",
           "Opportunity.npsp__Grant_Period_Start_Date__c",
           "Opportunity.npsp__Grant_Requirements_Website__c",
+          "Opportunity.GWR_oppty_chkbox__c",
           "Opportunity.npsp__Honoree_Contact__c",
           "Opportunity.npsp__Honoree_Information__c",
           "Opportunity.npsp__Honoree_Name__c",

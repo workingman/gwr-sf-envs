@@ -1,0 +1,13 @@
+salesforce.ValidationRule Account_Test_rule {
+  fullName = "Account.Test_rule"
+  active = true
+  errorConditionFormula = '''
+ISBLANK(AnnualRevenue)&&
+$Profile.Name = "Account Executives"
+'''
+  errorMessage = "Error message test"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account.Test_rule"
+}
