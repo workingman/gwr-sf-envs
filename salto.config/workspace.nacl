@@ -1,0 +1,5 @@
+workspace {
+  uid = "380c49a0-e0dd-4716-bc73-cd47508bf1bc"
+  name = "envsConnection380c49a0-e0dd-4716-bc73-cd47508bf1bc"
+  staleStateThresholdMinutes = undefined
+}
