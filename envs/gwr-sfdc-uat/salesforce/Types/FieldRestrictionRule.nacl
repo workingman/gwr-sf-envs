@@ -1,0 +1,104 @@
+type salesforce.FieldRestrictionRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  boolean active {
+  }
+  string classification {
+  }
+  string classificationType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ComplianceCategory",
+        "FieldSet",
+      ]
+    }
+  }
+  string description {
+  }
+  string enforcementType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "D360_Restrict",
+        "FieldRestrict",
+        "Restrict",
+        "Scoping",
+      ]
+    }
+  }
+  string masterLabel {
+  }
+  string recordFilter {
+  }
+  string targetEntity {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Account",
+        "Case",
+        "Contact",
+        "Contract",
+        "Event",
+        "Lead",
+        "Opportunity",
+        "Task",
+        "User",
+        "npe01__OppPayment__c",
+        "npe03__Recurring_Donation__c",
+        "npe4__Relationship_Error__c",
+        "npe4__Relationship__c",
+        "npe5__Affiliation__c",
+        "npo02__Household__c",
+        "npsp__Account_Soft_Credit__c",
+        "npsp__Address__c",
+        "npsp__Allocation__c",
+        "npsp__AutoNumber__c",
+        "npsp__Batch__c",
+        "npsp__DataImportBatch__c",
+        "npsp__DataImport__c",
+        "npsp__Engagement_Plan_Task__c",
+        "npsp__Engagement_Plan_Template__c",
+        "npsp__Engagement_Plan__c",
+        "npsp__Error__c",
+        "npsp__Form_Template__c",
+        "npsp__Fund__c",
+        "npsp__General_Accounting_Unit__c",
+        "npsp__GetStartedCompletionChecklistState__c",
+        "npsp__Grant_Deadline__c",
+        "npsp__Level__c",
+        "npsp__Partial_Soft_Credit__c",
+        "npsp__Payment_Services_Configuration__c",
+        "npsp__RecurringDonationChangeLog__c",
+        "npsp__RecurringDonationSchedule__c",
+        "npsp__Schedulable__c",
+        "npsp__Trigger_Handler__c",
+      ]
+    }
+  }
+  string userCriteria {
+  }
+  number version {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "rule"
+  dirName = "fieldRestrictionRules"
+  metadataType = "FieldRestrictionRule"
+}

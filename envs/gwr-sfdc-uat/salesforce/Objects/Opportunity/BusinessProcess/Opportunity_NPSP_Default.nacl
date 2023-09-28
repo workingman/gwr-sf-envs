@@ -1,0 +1,14 @@
+salesforce.BusinessProcess Opportunity_NPSP_Default {
+  fullName = "Opportunity.NPSP_Default"
+  isActive = true
+  values = [
+    {
+      fullName = "Prospecting"
+      default = false
+    },
+  ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.NPSP_Default"
+}
