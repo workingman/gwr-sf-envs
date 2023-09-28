@@ -1,0 +1,214 @@
+salesforce.EscalationRules Case {
+  fullName = "Case"
+  escalationRule = {
+    fullName = "Standard"
+    active = true
+    ruleEntry = [
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Platinum"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "High"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Platinum"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "Medium,Low"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Gold"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "High"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Gold"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "Medium,Low"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Silver"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Bronze"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "notEqual"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Gold,Platinum"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+      {
+        businessHoursSource = "Case"
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "notEqual"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Silver,Bronze"
+          },
+        ]
+        escalationAction = {
+          assignedTo = salesforce.Queue.instance.CaseQ
+          assignedToTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportEscalatedCaseReassignment@zcd
+          assignedToType = "Queue"
+          minutesToEscalation = 120
+          notifyCaseOwner = false
+        }
+        escalationStartTime = "CaseCreation"
+      },
+    ]
+  }
+  _alias = "Case"
+}
