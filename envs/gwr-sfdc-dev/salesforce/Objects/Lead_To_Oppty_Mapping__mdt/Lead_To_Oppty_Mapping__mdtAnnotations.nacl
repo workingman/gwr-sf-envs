@@ -1,0 +1,19 @@
+type salesforce.Lead_To_Oppty_Mapping__mdt {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    string pluralLabel {
+    }
+    hidden_string keyPrefix {
+    }
+  }
+  apiName = "Lead_To_Oppty_Mapping__mdt"
+  metadataType = "CustomMetadata"
+  label = "Lead To Oppty Mapping"
+  pluralLabel = "Lead To Oppty Mappings"
+  _alias = "Lead To Oppty Mapping"
+}

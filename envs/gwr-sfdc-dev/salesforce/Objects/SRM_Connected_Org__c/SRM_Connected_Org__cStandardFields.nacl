@@ -1,0 +1,88 @@
+type salesforce.SRM_Connected_Org__c {
+  serviceid Id {
+    apiName = "SRM_Connected_Org__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "SRM_Connected_Org__c.OwnerId"
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "SRM_Connected_Org__c.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "SRM_Connected_Org__c.Name"
+    length = 80
+    label = "Org Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SRM_Connected_Org__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "SRM_Connected_Org__c.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SRM_Connected_Org__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "SRM_Connected_Org__c.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SRM_Connected_Org__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

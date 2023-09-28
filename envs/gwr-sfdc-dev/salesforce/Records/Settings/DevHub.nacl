@@ -1,0 +1,10 @@
+salesforce.DevHubSettings {
+  fullName = "DevHub"
+  devOpsCenterBetaMsa = "false"
+  enableDevOpsCenter = "false"
+  enableDevOpsCenterGA = "false"
+  enablePackaging2 = false
+  enableScratchOrgManagementPref = true
+  enableShapeExportPref = "false"
+  _alias = "DevHub"
+}

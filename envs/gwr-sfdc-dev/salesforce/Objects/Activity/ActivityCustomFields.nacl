@@ -1,0 +1,38 @@
+type salesforce.Activity {
+  salesforce.Lookup npsp__Engagement_Plan_Task__c {
+    apiName = "Activity.npsp__Engagement_Plan_Task__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Engagement Plan Task"
+    referenceTo = [
+      "npsp__Engagement_Plan_Task__c",
+    ]
+    relationshipLabel = "Tasks"
+    relationshipName = "Tasks"
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Lookup npsp__Engagement_Plan__c {
+    apiName = "Activity.npsp__Engagement_Plan__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Engagement Plan"
+    referenceTo = [
+      "npsp__Engagement_Plan__c",
+    ]
+    relationshipLabel = "Tasks"
+    relationshipName = "Tasks"
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+}

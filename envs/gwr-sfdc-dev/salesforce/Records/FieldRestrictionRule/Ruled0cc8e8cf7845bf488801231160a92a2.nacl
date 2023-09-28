@@ -1,0 +1,19 @@
+salesforce.FieldRestrictionRule Ruled0cc8e8cf7845bf488801231160a92a2 {
+  fullName = "Ruled0cc8e8cf7845bf488801231160a92a2"
+  active = true
+  classification = "PersonalInfo_EPIM"
+  classificationType = "FieldSet"
+  description = "Field Restriction Rule for Guest PersonalInfo_EPIM"
+  enforcementType = "FieldRestrict"
+  masterLabel = "Ruled0cc8e8cf7845bf488801231160a92a2"
+  recordFilter = "Id='NEVER_TRUE'"
+  targetEntity = "User"
+  userCriteria = "CASE($User.UserType,'Guest',1,0)=1"
+  version = 0
+  _generated_dependencies = [
+    {
+      reference = salesforce.FieldSet.instance.User_PersonalInfo_EPIM
+    },
+  ]
+  _alias = "Ruled0cc8e8cf7845bf488801231160a92a2"
+}

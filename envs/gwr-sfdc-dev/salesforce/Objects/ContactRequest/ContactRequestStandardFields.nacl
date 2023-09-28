@@ -1,0 +1,283 @@
+type salesforce.ContactRequest {
+  salesforce.Lookup OwnerId {
+    apiName = "ContactRequest.OwnerId"
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist PreferredChannel {
+    apiName = "ContactRequest.PreferredChannel"
+    valueSet = [
+      {
+        fullName = "Phone"
+        isActive = true
+        label = "Phone"
+        default = true
+      },
+    ]
+    restricted = false
+    _required = true
+    label = "Preferred Channel"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Phone PreferredPhone {
+    apiName = "ContactRequest.PreferredPhone"
+    label = "Preferred Phone Number"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea RequestDescription {
+    apiName = "ContactRequest.RequestDescription"
+    length = 32000
+    label = "Request Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RequestReason {
+    apiName = "ContactRequest.RequestReason"
+    valueSet = [
+      {
+        fullName = "Account"
+        isActive = true
+        label = "Account"
+        default = true
+      },
+      {
+        fullName = "Billing"
+        isActive = true
+        label = "Billing"
+        default = false
+      },
+      {
+        fullName = "Case"
+        isActive = true
+        label = "Case"
+        default = false
+      },
+      {
+        fullName = "General"
+        isActive = true
+        label = "General"
+        default = false
+      },
+      {
+        fullName = "Order"
+        isActive = true
+        label = "Order"
+        default = false
+      },
+      {
+        fullName = "Product"
+        isActive = true
+        label = "Product"
+        default = false
+      },
+      {
+        fullName = "Other"
+        isActive = true
+        label = "Other"
+        default = false
+      },
+    ]
+    restricted = false
+    label = "Request Reason"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ContactRequest.Status"
+    valueSet = [
+      {
+        fullName = "New"
+        isActive = true
+        label = "New"
+        default = true
+      },
+      {
+        fullName = "Attempted"
+        isActive = true
+        label = "Attempted"
+        default = false
+      },
+      {
+        fullName = "Contacted"
+        isActive = true
+        label = "Contacted"
+        default = false
+      },
+      {
+        fullName = "Abandoned"
+        isActive = true
+        label = "Abandoned"
+        default = false
+      },
+    ]
+    restricted = false
+    _required = true
+    label = "Request Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WhatId {
+    apiName = "ContactRequest.WhatId"
+    relationshipName = "What"
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Case,
+      salesforce.Opportunity,
+      salesforce.SRM_Connected_Org__c,
+      salesforce.WorkOrder,
+      "npe01__Contacts_And_Orgs_Settings__c",
+      "npe01__OppPayment__c",
+      "npe01__Payment_Field_Mapping_Settings__c",
+      "npe03__Custom_Field_Mapping__c",
+      "npe03__Custom_Installment_Settings__c",
+      "npe03__Recurring_Donation__c",
+      "npe03__Recurring_Donations_Settings__c",
+      "npe4__Relationship_Auto_Create__c",
+      "npe4__Relationship_Error__c",
+      "npe4__Relationship_Lookup__c",
+      "npe4__Relationship_Settings__c",
+      "npe4__Relationship__c",
+      "npe5__Affiliation__c",
+      "npe5__Affiliations_Settings__c",
+      "npo02__Household__c",
+      "npo02__Households_Settings__c",
+      "npo02__Opportunity_Rollup_Error__c",
+      "npo02__User_Rollup_Field_Settings__c",
+      "npsp__Account_Soft_Credit__c",
+      "npsp__Address_Verification_Settings__c",
+      "npsp__Address__c",
+      "npsp__Allocation__c",
+      "npsp__Allocations_Settings__c",
+      "npsp__Batch_Data_Entry_Settings__c",
+      "npsp__Batch__c",
+      "npsp__Custom_Column_Header__c",
+      "npsp__Customizable_Rollup_Settings__c",
+      "npsp__DataImportBatch__c",
+      "npsp__DataImport__c",
+      "npsp__Data_Import_Settings__c",
+      "npsp__Engagement_Plan_Task__c",
+      "npsp__Engagement_Plan_Template__c",
+      "npsp__Engagement_Plan__c",
+      "npsp__Error_Settings__c",
+      "npsp__Error__c",
+      "npsp__Form_Template__c",
+      "npsp__Fund__c",
+      "npsp__General_Accounting_Unit__c",
+      "npsp__GetStartedCompletionChecklistState__c",
+      "npsp__Gift_Entry_Settings__c",
+      "npsp__Grant_Deadline__c",
+      "npsp__Household_Naming_Settings__c",
+      "npsp__Level__c",
+      "npsp__Levels_Settings__c",
+      "npsp__Opportunity_Naming_Settings__c",
+      "npsp__Partial_Soft_Credit__c",
+      "npsp__RecurringDonationChangeLog__c",
+      "npsp__Relationship_Sync_Excluded_Fields__c",
+      "npsp__Schedulable__c",
+      "npsp__Trigger_Handler__c",
+    ]
+    label = "Related To ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup WhoId {
+    apiName = "ContactRequest.WhoId"
+    relationshipName = "Who"
+    referenceTo = [
+      salesforce.Contact,
+      salesforce.Lead,
+      salesforce.User,
+    ]
+    label = "Requestor ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ContactRequest.Id"
+    label = "Contact Request ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ContactRequest.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ContactRequest.Name"
+    label = "Contact Request Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ContactRequest.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ContactRequest.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ContactRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ContactRequest.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ContactRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

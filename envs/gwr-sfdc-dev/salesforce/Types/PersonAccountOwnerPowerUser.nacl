@@ -1,0 +1,45 @@
+type salesforce.PersonAccountOwnerPowerUser {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string developerName {
+  }
+  string masterLabel {
+  }
+  string portalType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "CustomerPortal",
+        "Networks",
+        "None",
+        "Partner",
+      ]
+    }
+  }
+  string user {
+    foreignKeyDomain = [
+      salesforce.User,
+    ]
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "personAccountOwnerPowerUser"
+  dirName = "personAccountOwnerPowerUsers"
+  metadataType = "PersonAccountOwnerPowerUser"
+}

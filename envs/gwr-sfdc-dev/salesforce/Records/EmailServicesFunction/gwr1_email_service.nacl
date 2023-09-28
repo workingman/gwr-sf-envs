@@ -1,0 +1,23 @@
+salesforce.EmailServicesFunction gwr1_email_service {
+  fullName = "gwr1_email_service"
+  apexClass = salesforce.ApexClass.instance.gwr_email_handler
+  attachmentOption = "None"
+  authenticationFailureAction = "Discard"
+  authorizationFailureAction = "Discard"
+  emailServicesAddresses = {
+    authorizedSenders = "geoffrey.routledge+dev@salto.io"
+    developerName = "gwr_email_address1"
+    isActive = true
+    localPart = "gwr1_email_service"
+    runAsUser = "geoffrey.routledge+dev@salto.io"
+  }
+  functionInactiveAction = "Discard"
+  functionName = "gwr1_email_service"
+  isActive = false
+  isAuthenticationRequired = false
+  isErrorRoutingEnabled = false
+  isTextAttachmentsAsBinary = false
+  isTlsRequired = false
+  overLimitAction = "Discard"
+  _alias = "gwr1_email_service"
+}

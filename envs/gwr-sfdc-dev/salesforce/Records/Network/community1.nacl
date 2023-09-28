@@ -1,0 +1,56 @@
+salesforce.Network community1 {
+  fullName = "community1"
+  allowInternalUserLogin = false
+  allowMembersToFlag = false
+  changePasswordTemplate = "unfiled$public/CommunityChangePasswordEmailTemplate"
+  communityRoles = {
+  }
+  disableReputationRecordConversations = true
+  emailSenderAddress = "geoffrey.routledge+dev@salto.io"
+  emailSenderName = "community1"
+  enableApexCDNCaching = true
+  enableCustomVFErrorPageOverrides = false
+  enableDirectMessages = true
+  enableExperienceBundleBasedSnaOverrideEnabled = true
+  enableGuestChatter = false
+  enableGuestFileAccess = false
+  enableGuestMemberVisibility = false
+  enableImageOptimizationCDN = true
+  enableInvitation = false
+  enableKnowledgeable = false
+  enableMemberVisibility = false
+  enableNicknameDisplay = true
+  enablePrivateMessages = false
+  enableReputation = false
+  enableShowAllNetworkSettings = false
+  enableSiteAsContainer = true
+  enableTalkingAboutStats = true
+  enableTopicAssignmentRules = true
+  enableTopicSuggestions = false
+  enableUpDownVote = false
+  forgotPasswordTemplate = "unfiled$public/CommunityForgotPasswordEmailTemplate"
+  gatherCustomerSentimentData = false
+  headlessForgotPasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityHeadlessForgotPasswordTemplate@zcd
+  networkMemberGroups = {
+    profile = "admin"
+  }
+  networkPageOverrides = {
+    changePasswordPageOverrideSetting = "Standard"
+    forgotPasswordPageOverrideSetting = "Designer"
+    homePageOverrideSetting = "Designer"
+    loginPageOverrideSetting = "Designer"
+    selfRegProfilePageOverrideSetting = "Designer"
+  }
+  picassoSite = "community11"
+  selfRegistration = false
+  sendWelcomeEmail = true
+  site = salesforce.CustomSite.instance.community1
+  siteArchiveStatus = "NotArchived"
+  status = "UnderConstruction"
+  tabs = {
+    defaultTab = "home"
+    standardTab = "Chatter"
+  }
+  welcomeTemplate = "unfiled$public/CommunityWelcomeEmailTemplate"
+  _alias = "community1"
+}

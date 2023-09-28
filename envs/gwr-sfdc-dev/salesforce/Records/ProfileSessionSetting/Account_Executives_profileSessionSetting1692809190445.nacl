@@ -1,0 +1,10 @@
+salesforce.ProfileSessionSetting Account_Executives_profileSessionSetting1692809190445 {
+  fullName = "Account_Executives_profileSessionSetting1692809190445"
+  externalCommunityUserIdentityVerif = false
+  forceLogout = false
+  profile = "account executives"
+  sessionPersistence = false
+  sessionTimeout = 720
+  sessionTimeoutWarning = false
+  _alias = "Account_Executives_profileSessionSetting1692809190445"
+}

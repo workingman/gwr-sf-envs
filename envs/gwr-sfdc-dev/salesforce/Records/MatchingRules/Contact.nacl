@@ -1,0 +1,52 @@
+salesforce.MatchingRules Contact {
+  fullName = "Contact"
+  matchingRules = [
+    {
+      fullName = "GWR_match_NPSP_Contact_Personal_Email_Match"
+      description = "Matching rule for contact records; matches on First Name, Last Name, and Personal Email."
+      label = "GWR_match NPSP Contact Personal Email Match"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "FirstName"
+          matchingMethod = "FirstName"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "LastName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "npe01__HomeEmail__c"
+          matchingMethod = "Exact"
+        },
+      ]
+      ruleStatus = "Inactive"
+    },
+    {
+      fullName = "npsp__NPSP_Contact_Personal_Email_Match"
+      description = "Matching rule for contact records; matches on First Name, Last Name, and Personal Email."
+      label = "NPSP Contact Personal Email Match"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "FirstName"
+          matchingMethod = "FirstName"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "LastName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "npe01__HomeEmail__c"
+          matchingMethod = "Exact"
+        },
+      ]
+      ruleStatus = "Active"
+    },
+  ]
+  _alias = "Contact"
+}

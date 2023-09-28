@@ -1,0 +1,1234 @@
+type salesforce.Account {
+  salesforce.Picklist Active__c {
+    apiName = "Account.Active__c"
+    externalId = false
+    label = "Active"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist CustomerPriority__c {
+    apiName = "Account.CustomerPriority__c"
+    externalId = false
+    label = "Customer Priority"
+    valueSet = [
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      },
+      {
+        fullName = "Medium"
+        default = false
+        label = "Medium"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox GWR_checkbokx2__c {
+    apiName = "Account.GWR_checkbokx2__c"
+    defaultValue = false
+    externalId = false
+    label = "__GWR checkbokx2"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox GWR_new_checkbox__c {
+    apiName = "Account.GWR_new_checkbox__c"
+    defaultValue = false
+    externalId = false
+    label = "GWR new checkbox"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Account.NumberofLocations__c"
+    externalId = false
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SLAExpirationDate__c {
+    apiName = "Account.SLAExpirationDate__c"
+    externalId = false
+    label = "SLA Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SLASerialNumber__c {
+    apiName = "Account.SLASerialNumber__c"
+    externalId = false
+    label = "SLA Serial Number"
+    length = 10
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SLA__c {
+    apiName = "Account.SLA__c"
+    externalId = false
+    label = "SLA"
+    valueSet = [
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Copper"
+        default = true
+        label = "Copper"
+      },
+      {
+        fullName = "Platinum"
+        default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Titanium"
+        default = false
+        label = "Titanium"
+      },
+      {
+        fullName = "Tin"
+        default = false
+        label = "Tin"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist UpsellOpportunity__c {
+    apiName = "Account.UpsellOpportunity__c"
+    externalId = false
+    label = "Upsell Opportunity"
+    valueSet = [
+      {
+        fullName = "Maybe"
+        default = false
+        label = "Maybe"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup npe01__One2OneContact__c {
+    apiName = "Account.npe01__One2OneContact__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The primary contact for the Account, or the One2One contact for a One2One account."
+    externalId = false
+    inlineHelpText = "The primary contact for the Account, or the One2One contact for a One2One account."
+    label = "Primary Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Account"
+    relationshipName = "Organizations"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npe01
+      },
+    ]
+  }
+  salesforce.Checkbox npe01__SYSTEMIsIndividual__c {
+    apiName = "Account.npe01__SYSTEMIsIndividual__c"
+    defaultValue = false
+    deprecated = false
+    description = "Hidden system field: do not change.  Updated by automatic processes."
+    externalId = false
+    inlineHelpText = "Indicates whether or not this Account is special for Contacts (Household, One-to-One, Individual) vs a normal Account."
+    label = "_SYSTEM: IsIndividual"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npe01
+      },
+    ]
+  }
+  salesforce.Text npe01__SYSTEM_AccountType__c {
+    apiName = "Account.npe01__SYSTEM_AccountType__c"
+    deprecated = false
+    description = "Hidden system field: do not change.  Updated by automatic processes."
+    externalId = false
+    inlineHelpText = "Indicates which Account Model this account is for: Household Account, One-to-One, or Individual (bucket)."
+    label = "_SYSTEM: AccountType"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npe01
+      },
+    ]
+  }
+  salesforce.Currency npo02__AverageAmount__c {
+    apiName = "Account.npo02__AverageAmount__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "System field: do not change. Updated by automatic processes."
+    externalId = false
+    inlineHelpText = "Average won Opportunity amount related to this Account.  Updated automatically."
+    label = "Average Gift"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__Best_Gift_Year_Total__c {
+    apiName = "Account.npo02__Best_Gift_Year_Total__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The sum of won Opportunity amounts in the Best Gift Year for this Account."
+    label = "Best Gift Year Total"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Text npo02__Best_Gift_Year__c {
+    apiName = "Account.npo02__Best_Gift_Year__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The year in which the largest total amount of won Opportunities related to this Account occurred.  See also Best Gift Year Total."
+    label = "Best Gift Year"
+    length = 4
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Date npo02__FirstCloseDate__c {
+    apiName = "Account.npo02__FirstCloseDate__c"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The earliest won Opportunity (by Close Date) with amount greater than zero related to this Account."
+    label = "First Gift Date"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.TextArea npo02__Formal_Greeting__c {
+    apiName = "Account.npo02__Formal_Greeting__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically."
+    label = "Formal Greeting"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Phone npo02__HouseholdPhone__c {
+    apiName = "Account.npo02__HouseholdPhone__c"
+    deprecated = false
+    externalId = false
+    label = "Household Phone"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.TextArea npo02__Informal_Greeting__c {
+    apiName = "Account.npo02__Informal_Greeting__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically."
+    label = "Informal Greeting"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__LargestAmount__c {
+    apiName = "Account.npo02__LargestAmount__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The largest amount of a won Opportunity related to this Account."
+    label = "Largest Gift"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Date npo02__LastCloseDate__c {
+    apiName = "Account.npo02__LastCloseDate__c"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The most recent Close Date of a won Opportunity related to this Account with amount greater than zero."
+    label = "Last Gift Date"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__LastMembershipAmount__c {
+    apiName = "Account.npo02__LastMembershipAmount__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The amount of the most recent (by Close Date) won Membership Opportunity (by Record Type) for this Account."
+    label = "Last Membership Amount"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Date npo02__LastMembershipDate__c {
+    apiName = "Account.npo02__LastMembershipDate__c"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The most recent Close Date of a won Membership Opportunity (by Record Type) related to this Account."
+    label = "Last Membership Date"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Text npo02__LastMembershipLevel__c {
+    apiName = "Account.npo02__LastMembershipLevel__c"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "Membership level from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account.\""
+    label = "Last Membership Level"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Text npo02__LastMembershipOrigin__c {
+    apiName = "Account.npo02__LastMembershipOrigin__c"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "Membership \"origin\" (new, renew...) from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account."
+    label = "Last Membership Origin"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__LastOppAmount__c {
+    apiName = "Account.npo02__LastOppAmount__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The amount of the most recent won Opportunity (by Close Date) with amount greater than zero related to this Account."
+    label = "Last Gift Amount"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Date npo02__MembershipEndDate__c {
+    apiName = "Account.npo02__MembershipEndDate__c"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "Membership end date from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account."
+    label = "Membership End Date"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Date npo02__MembershipJoinDate__c {
+    apiName = "Account.npo02__MembershipJoinDate__c"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "Membership start date from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account."
+    label = "Membership Join Date"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Number npo02__NumberOfClosedOpps__c {
+    apiName = "Account.npo02__NumberOfClosedOpps__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The total number of won Opportunities  related to this Account."
+    label = "Total Number of Gifts"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Number npo02__NumberOfMembershipOpps__c {
+    apiName = "Account.npo02__NumberOfMembershipOpps__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The total number of won Membership Opportunities (Record Type) related to this Account."
+    label = "Number of Memberships"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__OppAmount2YearsAgo__c {
+    apiName = "Account.npo02__OppAmount2YearsAgo__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total amount of won Opportunities related to this Account, closed within the year or fiscal year preceding last year (see Household Settings)."
+    label = "Total Gifts Two Years Ago"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__OppAmountLastNDays__c {
+    apiName = "Account.npo02__OppAmountLastNDays__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total amount of won Opportunities related to this Account, closed in the last number of days defined in Household Settings."
+    label = "Total Gifts Last N Days"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__OppAmountLastYear__c {
+    apiName = "Account.npo02__OppAmountLastYear__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total amount of won Opportunities related to this Account, closed in the current year or fiscal year."
+    label = "Total Gifts Last Year"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__OppAmountThisYear__c {
+    apiName = "Account.npo02__OppAmountThisYear__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total amount of won Opportunities related to this Account, closed in the current year or fiscal year."
+    label = "Total Gifts This Year"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Number npo02__OppsClosed2YearsAgo__c {
+    apiName = "Account.npo02__OppsClosed2YearsAgo__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Account, closed within the year or fiscal year preceding last year."
+    label = "Number of Gifts Two Years Ago"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Number npo02__OppsClosedLastNDays__c {
+    apiName = "Account.npo02__OppsClosedLastNDays__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total amount of won Opportunities related to this Account, closed in the last number of days defined in Household Settings."
+    label = "Number of Gifts Last N Days"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Number npo02__OppsClosedLastYear__c {
+    apiName = "Account.npo02__OppsClosedLastYear__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Account, closed in the previous year or fiscal year (see Household Settings)."
+    label = "Number of Gifts Last Year"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Number npo02__OppsClosedThisYear__c {
+    apiName = "Account.npo02__OppsClosedThisYear__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings."
+    externalId = false
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Account, closed in the current year or fiscal year (see Household Settings)."
+    label = "Number of Gifts This Year"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.MultiselectPicklist npo02__SYSTEM_CUSTOM_NAMING__c {
+    apiName = "Account.npo02__SYSTEM_CUSTOM_NAMING__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "For Household Accounts, specifies which name related fields should not be automatically populated by the Householding code."
+    label = "_SYSTEM: CUSTOM NAMING"
+    valueSet = [
+      {
+        fullName = "Name"
+        default = false
+        label = "Name"
+      },
+      {
+        fullName = "Formal_Greeting__c"
+        default = false
+        label = "Formal_Greeting__c"
+      },
+      {
+        fullName = "Informal_Greeting__c"
+        default = false
+        label = "Informal_Greeting__c"
+      },
+    ]
+    sorted = false
+    restricted = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__SmallestAmount__c {
+    apiName = "Account.npo02__SmallestAmount__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The smallest non-zero amount of a won Opportunity related to this Account."
+    label = "Smallest Gift"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__TotalMembershipOppAmount__c {
+    apiName = "Account.npo02__TotalMembershipOppAmount__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The total amount of won Membership Opportunities (Record Type) related to this Account."
+    label = "Total Membership Amount"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Currency npo02__TotalOppAmount__c {
+    apiName = "Account.npo02__TotalOppAmount__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings."
+    externalId = false
+    inlineHelpText = "The sum of amounts of all won Opportunities related to this Account."
+    label = "Total Gifts"
+    precision = 16
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npo02
+      },
+    ]
+  }
+  salesforce.Checkbox npsp__All_Members_Deceased__c {
+    apiName = "Account.npsp__All_Members_Deceased__c"
+    defaultValue = false
+    deprecated = false
+    description = "If selected, all members of this household are deceased. Do not update this field manually. It's updated automatically by NPSP as a result of updates to the Deceased checkbox on household member Contacts."
+    externalId = false
+    inlineHelpText = "If selected, all members of this household are deceased. Do not update this field manually. It's updated automatically by NPSP as a result of updates to the Deceased checkbox on household member Contacts."
+    label = "All Household Members Deceased"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Lookup npsp__Batch__c {
+    apiName = "Account.npsp__Batch__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The batch this Account was created in."
+    label = "Batch"
+    referenceTo = [
+      "npsp__Batch__c",
+    ]
+    relationshipLabel = "Accounts"
+    relationshipName = "Accounts"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Checkbox npsp__CustomizableRollups_UseSkewMode__c {
+    apiName = "Account.npsp__CustomizableRollups_UseSkewMode__c"
+    defaultValue = false
+    deprecated = false
+    description = "When checked, Customizable Rollups will always use 'Skew Mode' to rollup Hard Credit and Soft Credits for this record."
+    externalId = false
+    inlineHelpText = "When checked, Customizable Rollups will always use 'Skew Mode' to rollup Hard Credit and Soft Credits for this record."
+    label = "Customizable Rollups: Force Skew Mode"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.MultiselectPicklist npsp__Funding_Focus__c {
+    apiName = "Account.npsp__Funding_Focus__c"
+    deprecated = false
+    description = "The general program area(s) that this organization funds."
+    externalId = false
+    inlineHelpText = "The general program area(s) that this organization funds."
+    label = "Funding Focus"
+    valueSet = [
+      {
+        fullName = "Animal Welfare"
+        default = false
+        label = "Animal Welfare"
+      },
+      {
+        fullName = "Arts and Culture"
+        default = false
+        label = "Arts and Culture"
+      },
+      {
+        fullName = "Capacity Building"
+        default = false
+        label = "Capacity Building"
+      },
+      {
+        fullName = "Education"
+        default = false
+        label = "Education"
+      },
+      {
+        fullName = "Environmental"
+        default = false
+        label = "Environmental"
+      },
+      {
+        fullName = "Health Services"
+        default = false
+        label = "Health Services"
+      },
+      {
+        fullName = "Human Services"
+        default = false
+        label = "Human Services"
+      },
+    ]
+    sorted = false
+    restricted = false
+    visibleLines = 4
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Checkbox npsp__Grantmaker__c {
+    apiName = "Account.npsp__Grantmaker__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates that this organization is a grantmaking organization."
+    externalId = false
+    inlineHelpText = "Indicates that this organization is a grantmaking organization."
+    label = "Grantmaker"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Text npsp__Matching_Gift_Administrator_Name__c {
+    apiName = "Account.npsp__Matching_Gift_Administrator_Name__c"
+    deprecated = false
+    description = "The name of the company's Matching Gift administrator."
+    externalId = false
+    inlineHelpText = "The name of the company's Matching Gift administrator."
+    label = "Matching Gift Administrator Name"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Currency npsp__Matching_Gift_Amount_Max__c {
+    apiName = "Account.npsp__Matching_Gift_Amount_Max__c"
+    deprecated = false
+    description = "The maximum amount the company will match on any single gift."
+    externalId = false
+    inlineHelpText = "The maximum amount the company will match on any single gift."
+    label = "Matching Gift Amount Max"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Currency npsp__Matching_Gift_Amount_Min__c {
+    apiName = "Account.npsp__Matching_Gift_Amount_Min__c"
+    deprecated = false
+    description = "The smallest amount the company will match on any single gift."
+    externalId = false
+    inlineHelpText = "The smallest amount the company will match on any single gift."
+    label = "Matching Gift Amount Min"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Currency npsp__Matching_Gift_Annual_Employee_Max__c {
+    apiName = "Account.npsp__Matching_Gift_Annual_Employee_Max__c"
+    deprecated = false
+    description = "The maximum amount the company will match each year for an employee."
+    externalId = false
+    inlineHelpText = "The maximum amount the company will match each year for an employee."
+    label = "Matching Gift Annual Employee Max"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.LongTextArea npsp__Matching_Gift_Comments__c {
+    apiName = "Account.npsp__Matching_Gift_Comments__c"
+    deprecated = false
+    description = "Additional notes about the company's Matching Gift program."
+    externalId = false
+    inlineHelpText = "Additional notes about the company's Matching Gift program."
+    label = "Matching Gift Comments"
+    length = 32768
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Checkbox npsp__Matching_Gift_Company__c {
+    apiName = "Account.npsp__Matching_Gift_Company__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates that this company offers Matching Gifts."
+    externalId = false
+    inlineHelpText = "Indicates that this company offers Matching Gifts."
+    label = "Matching Gift Company"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Email npsp__Matching_Gift_Email__c {
+    apiName = "Account.npsp__Matching_Gift_Email__c"
+    deprecated = false
+    description = "Email of the company's Matching Gift administrator."
+    externalId = false
+    inlineHelpText = "Email of the company's Matching Gift administrator."
+    label = "Matching Gift Email"
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Date npsp__Matching_Gift_Info_Updated__c {
+    apiName = "Account.npsp__Matching_Gift_Info_Updated__c"
+    deprecated = false
+    description = "The date you last updated the Matching Gift information."
+    externalId = false
+    inlineHelpText = "The date you last updated the Matching Gift information."
+    label = "Matching Gift Info Updated"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Percent npsp__Matching_Gift_Percent__c {
+    apiName = "Account.npsp__Matching_Gift_Percent__c"
+    deprecated = false
+    description = "The portion of a gift the company will match."
+    externalId = false
+    inlineHelpText = "The portion of a gift the company will match."
+    label = "Matching Gift Percent"
+    precision = 5
+    scale = 2
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Phone npsp__Matching_Gift_Phone__c {
+    apiName = "Account.npsp__Matching_Gift_Phone__c"
+    deprecated = false
+    description = "The phone number of the company's Matching Gift administrator."
+    externalId = false
+    inlineHelpText = "The phone number of the company's Matching Gift administrator."
+    label = "Matching Gift Phone"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Text npsp__Matching_Gift_Request_Deadline__c {
+    apiName = "Account.npsp__Matching_Gift_Request_Deadline__c"
+    deprecated = false
+    description = "Use this field to note any age restrictions this company places on Matching Gift eligibility."
+    externalId = false
+    inlineHelpText = "Use this field to note any age restrictions this company places on Matching Gift eligibility."
+    label = "Matching Gift Request Deadline"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.FormulaNumber npsp__Membership_Span__c {
+    apiName = "Account.npsp__Membership_Span__c"
+    deprecated = false
+    description = "The number of years that a member of this Household has had a Membership (read only)."
+    externalId = false
+    formula = "year(npo02__MembershipEndDate__c ) - year(npo02__MembershipJoinDate__c)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "The number of years that a member of this Household has had a Membership (read only)."
+    label = "Membership Span"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account.field.npo02__MembershipEndDate__c
+      },
+      {
+        reference = salesforce.Account.field.npo02__MembershipJoinDate__c
+      },
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.FormulaText npsp__Membership_Status__c {
+    apiName = "Account.npsp__Membership_Status__c"
+    deprecated = false
+    description = "The Membership status of this Household, for example, Current, Expired, or Grace Period. The value is based on Membership End Date and Grace Period. The Default Grace Period is set in NPSP Settings, under Household Settings. This field is read only."
+    externalId = false
+    formula = '''
+if ( npo02__MembershipEndDate__c  <today(), if (npo02__MembershipEndDate__c  > ( TODAY() -
+IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Period__c)), $Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Period__c, 30)) , "Grace Period" , "Expired") , if(isnull(npo02__MembershipEndDate__c ),"","Current"))
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "The Membership status of this Household, for example, Current, Expired, or Grace Period. The value is based on Membership End Date and Grace Period. The Default Grace Period is set in NPSP Settings, under Household Settings. This field is read only."
+    label = "Membership Status"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account.field.npo02__MembershipEndDate__c
+      },
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Number npsp__Number_of_Household_Members__c {
+    apiName = "Account.npsp__Number_of_Household_Members__c"
+    deprecated = false
+    description = "The number of Contacts who are members of this Household."
+    externalId = false
+    inlineHelpText = "The number of Contacts who are members of this Household."
+    label = "Number of Household Members"
+    precision = 10
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Picklist npsp__Sustainer__c {
+    apiName = "Account.npsp__Sustainer__c"
+    deprecated = false
+    description = "Indicates if this Account is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
+    externalId = false
+    inlineHelpText = "Indicates if this Account is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
+    label = "Sustainer"
+    valueSet = [
+      {
+        fullName = "Active"
+        default = false
+        label = "Active"
+      },
+      {
+        fullName = "Lapsed"
+        default = false
+        label = "Lapsed"
+      },
+      {
+        fullName = "Former"
+        default = false
+        label = "Former"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Checkbox npsp__Undeliverable_Address__c {
+    apiName = "Account.npsp__Undeliverable_Address__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates the address is undeliverable."
+    externalId = false
+    label = "Undeliverable Billing Address"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+salesforce.AssignmentRules Lead {
+  assignmentRule = [
+    {
+      fullName = "Standard"
+      active = true
+      ruleEntry = [
+        {
+          assignedTo = salesforce.Queue.instance.hotLead
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Lead.field.LeadScore__c
+              operation = "greaterOrEqual"
+              value = "0.4"
+            },
+          ]
+        },
+        {
+          assignedTo = salesforce.Queue.instance.LeadQ
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = "Lead.Country"
+              operation = "equals"
+              value = "US,USA,United States,United States of America"
+            },
+          ]
+        },
+        {
+          assignedTo = salesforce.Queue.instance.LeadQ
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = "Lead.Country"
+              operation = "notEqual"
+              value = "US,USA,United States,United States of America"
+            },
+          ]
+        },
+        {
+          assignedTo = salesforce.Queue.instance.hotLead
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = "Lead.City"
+              operation = "equals"
+              value = "Vancouver"
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  fullName = "Lead"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead"
+}

@@ -1,0 +1,4 @@
+salesforce.ManagedTopics community1 {
+  fullName = "community1"
+  _alias = "community1"
+}

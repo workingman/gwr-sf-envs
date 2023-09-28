@@ -1,0 +1,82 @@
+salesforce.Layout items_GWR_ds_google__x_items_GWR_ds_google_Layout@uuuuubuuus {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.Author__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.Comment__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.ContentLength__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.CreationDate__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.DownloadUrl__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.IsFolder__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.MimeType__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.Name__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.ParentId__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.UpdateDate__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.items_GWR_ds_google__x.field.UpdatedBy__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "items_GWR_ds_google__x-items_GWR_ds_google Layout"
+  _parent = [
+    salesforce.items_GWR_ds_google__x,
+  ]
+  _alias = "items_GWR_ds_google__x-items_GWR_ds_google Layout"
+}
