@@ -47,6 +47,18 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Account.field.NumberOfEmployees
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.GWR_checkbokx2__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.GWR_new_checkbox__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.gwr_fls1__c
+            },
           ]
         },
         {
