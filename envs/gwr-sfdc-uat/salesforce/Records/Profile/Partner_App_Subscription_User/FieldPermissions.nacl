@@ -391,6 +391,7 @@ salesforce.Profile Partner_App_Subscription_User@s {
       npsp__Number_of_Household_Members__c = "ReadWrite"
       npsp__Sustainer__c = "ReadWrite"
       npsp__Undeliverable_Address__c = "ReadWrite"
+      gwr_fls1__c = "ReadWrite"
     }
     Problem = {
       Category = "ReadWrite"

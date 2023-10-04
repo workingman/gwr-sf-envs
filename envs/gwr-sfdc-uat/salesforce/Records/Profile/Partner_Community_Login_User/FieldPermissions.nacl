@@ -391,6 +391,7 @@ salesforce.Profile Partner_Community_Login_User@s {
       npsp__Number_of_Household_Members__c = "NoAccess"
       npsp__Sustainer__c = "NoAccess"
       npsp__Undeliverable_Address__c = "NoAccess"
+      gwr_fls1__c = "ReadWrite"
     }
     Problem = {
       Category = "ReadWrite"

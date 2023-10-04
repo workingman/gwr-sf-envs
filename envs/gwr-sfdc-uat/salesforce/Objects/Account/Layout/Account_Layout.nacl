@@ -51,6 +51,10 @@ salesforce.Layout Account_Account_Layout@bs {
               behavior = "Edit"
               field = salesforce.Account.field.GWR_new_checkbox__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.gwr_fls1__c
+            },
           ]
         },
         {
