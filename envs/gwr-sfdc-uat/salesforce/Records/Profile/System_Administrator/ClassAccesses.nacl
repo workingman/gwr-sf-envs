@@ -1,0 +1,56 @@
+salesforce.Profile Admin {
+  classAccesses = {
+    AccountController = {
+      apexClass = "AccountController"
+      enabled = true
+    }
+    LeadTriggerHandler = {
+      apexClass = "LeadTriggerHandler"
+      enabled = true
+    }
+    LeftAClass = {
+      apexClass = "LeftAClass"
+      enabled = true
+    }
+    LeftAClass22 = {
+      apexClass = "LeftAClass22"
+      enabled = true
+    }
+    LeftBClass = {
+      apexClass = "LeftBClass"
+      enabled = true
+    }
+    LeftClass = {
+      apexClass = "LeftClass"
+      enabled = true
+    }
+    RightAClass = {
+      apexClass = "RightAClass"
+      enabled = true
+    }
+    RightBClass = {
+      apexClass = "RightBClass"
+      enabled = true
+    }
+    RightClass = {
+      apexClass = "RightClass"
+      enabled = true
+    }
+    TopLevelClass = {
+      apexClass = "TopLevelClass"
+      enabled = true
+    }
+    TriggerHandlerBase = {
+      apexClass = "TriggerHandlerBase"
+      enabled = true
+    }
+    gwr_class2 = {
+      apexClass = "gwr_class2"
+      enabled = true
+    }
+    gwr_email_handler = {
+      apexClass = "gwr_email_handler"
+      enabled = true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+salesforce.Profile Analytics_Cloud_Security_User@s {
+  flowAccesses = {
+    GWR_Flow1 = {
+      enabled = false
+      flow = "GWR_Flow1"
+    }
+    GWR_Flow2 = {
+      enabled = false
+      flow = "GWR_Flow2"
+    }
+    GWR_Flow3 = {
+      enabled = false
+      flow = "GWR_Flow3"
+    }
+    GWR_Flow4 = {
+      enabled = false
+      flow = "GWR_Flow4"
+    }
+    GWR_Flow5 = {
+      enabled = false
+      flow = "GWR_Flow5"
+    }
+    GWR_Flow6 = {
+      enabled = false
+      flow = "GWR_Flow6"
+    }
+    GWR_Flow7 = {
+      enabled = false
+      flow = "GWR_Flow7"
+    }
+    GWR_Flow8 = {
+      enabled = false
+      flow = "GWR_Flow8"
+    }
+    GWR_Flow9a = {
+      enabled = false
+      flow = "GWR_Flow9a"
+    }
+  }
+}

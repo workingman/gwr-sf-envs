@@ -1,0 +1,30 @@
+salesforce.Profile Analytics_Cloud_Security_User@s {
+  recordTypeVisibilities = {
+    Account = {
+      HH_Account = {
+        default = false
+        recordType = "Account.HH_Account"
+        visible = false
+      }
+      Organization = {
+        default = false
+        recordType = "Account.Organization"
+        visible = false
+      }
+    }
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = "Idea.InternalIdeasIdeaRecordType"
+        visible = false
+      }
+    }
+    Opportunity = {
+      NPSP_Default = {
+        default = false
+        recordType = "Opportunity.NPSP_Default"
+        visible = false
+      }
+    }
+  }
+}
