@@ -1,0 +1,7 @@
+salesforce.ApexClass gwr_email_handler {
+  apiVersion = 55
+  status = "Active"
+  fullName = "gwr_email_handler"
+  content = file("salesforce/Records/ApexClass/gwr_email_handler.cls")
+  _alias = "gwr_email_handler"
+}

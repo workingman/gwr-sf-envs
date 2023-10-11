@@ -1,0 +1,266 @@
+salesforce.RecordType Opportunity_NPSP_Default {
+  fullName = "Opportunity.NPSP_Default"
+  active = true
+  businessProcess = salesforce.BusinessProcess.instance.Opportunity_NPSP_Default
+  label = "NPSP Default"
+  picklistValues = [
+    {
+      picklist = salesforce.Opportunity.field.DeliveryInstallationStatus__c
+      values = [
+        {
+          fullName = "Completed"
+          default = false
+        },
+        {
+          fullName = "In progress"
+          default = false
+        },
+        {
+          fullName = "Yet to begin"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.ForecastCategoryName
+      values = [
+        {
+          fullName = "Best Case"
+          default = false
+        },
+        {
+          fullName = "Closed"
+          default = false
+        },
+        {
+          fullName = "Commit"
+          default = false
+        },
+        {
+          fullName = "Omitted"
+          default = false
+        },
+        {
+          fullName = "Pipeline"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.LeadSource
+      values = [
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partner Referral"
+          default = false
+        },
+        {
+          fullName = "Phone Inquiry"
+          default = false
+        },
+        {
+          fullName = "Purchased List"
+          default = false
+        },
+        {
+          fullName = "Web"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.Type
+      values = [
+        {
+          fullName = "Existing Customer - Downgrade"
+          default = false
+        },
+        {
+          fullName = "Existing Customer - Replacement"
+          default = false
+        },
+        {
+          fullName = "Existing Customer - Upgrade"
+          default = false
+        },
+        {
+          fullName = "New Customer"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npe01__Member_Level__c
+      values = [
+        {
+          fullName = "Bronze"
+          default = false
+        },
+        {
+          fullName = "Gold"
+          default = false
+        },
+        {
+          fullName = "Silver"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npe01__Membership_Origin__c
+      values = [
+        {
+          fullName = "New"
+          default = false
+        },
+        {
+          fullName = "Reacquire"
+          default = false
+        },
+        {
+          fullName = "Renewal"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npo02__systemHouseholdContactRoleProcessor__c
+      values = [
+        {
+          fullName = "All Opportunities"
+          default = true
+        },
+        {
+          fullName = "No Opportunities"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__Acknowledgment_Status__c
+      values = [
+        {
+          fullName = "Acknowledged"
+          default = false
+        },
+        {
+          fullName = "Do Not Acknowledge"
+          default = false
+        },
+        {
+          fullName = "Email Acknowledgment Not Sent"
+          default = false
+        },
+        {
+          fullName = "Email Acknowledgment Now"
+          default = false
+        },
+        {
+          fullName = "To Be Acknowledged"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__Gift_Strategy__c
+      values = [
+        {
+          fullName = "New Donor"
+          default = false
+        },
+        {
+          fullName = "Renewal"
+          default = false
+        },
+        {
+          fullName = "Upgrade"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__In_Kind_Type__c
+      values = [
+        {
+          fullName = "Goods"
+          default = false
+        },
+        {
+          fullName = "Services"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__Matching_Gift_Status__c
+      values = [
+        {
+          fullName = "Potential"
+          default = false
+        },
+        {
+          fullName = "Received"
+          default = false
+        },
+        {
+          fullName = "Submitted"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__Notification_Preference__c
+      values = [
+        {
+          fullName = "Do Not Notify"
+          default = false
+        },
+        {
+          fullName = "Email"
+          default = false
+        },
+        {
+          fullName = "Phone"
+          default = false
+        },
+        {
+          fullName = "Postal Mail"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__Tribute_Notification_Status__c
+      values = [
+        {
+          fullName = "Notified"
+          default = false
+        },
+        {
+          fullName = "To Be Notified"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Opportunity.field.npsp__Tribute_Type__c
+      values = [
+        {
+          fullName = "Honor"
+          default = false
+        },
+        {
+          fullName = "Memorial"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "NPSP Default"
+}

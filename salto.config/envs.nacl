@@ -1,0 +1,16 @@
+envs {
+  envs = [
+    {
+      name = "46d81275-bc75-49c1-acd3-8a2354d08a27-gwr-cpq-dev"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+    {
+      name = "gwr-sfdc-uat"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+  ]
+}
