@@ -1,0 +1,52 @@
+salesforce.Profile High_Volume_Customer_Portal_User@s {
+  classAccesses = {
+    LeadTriggerHandler = {
+      apexClass = "LeadTriggerHandler"
+      enabled = false
+    }
+    LeftAClass = {
+      apexClass = "LeftAClass"
+      enabled = false
+    }
+    LeftAClass22 = {
+      apexClass = "LeftAClass22"
+      enabled = false
+    }
+    LeftBClass = {
+      apexClass = "LeftBClass"
+      enabled = false
+    }
+    LeftClass = {
+      apexClass = "LeftClass"
+      enabled = false
+    }
+    RightAClass = {
+      apexClass = "RightAClass"
+      enabled = false
+    }
+    RightBClass = {
+      apexClass = "RightBClass"
+      enabled = false
+    }
+    RightClass = {
+      apexClass = "RightClass"
+      enabled = false
+    }
+    TopLevelClass = {
+      apexClass = "TopLevelClass"
+      enabled = false
+    }
+    TriggerHandlerBase = {
+      apexClass = "TriggerHandlerBase"
+      enabled = false
+    }
+    gwr_class2 = {
+      apexClass = "gwr_class2"
+      enabled = false
+    }
+    gwr_email_handler = {
+      apexClass = "gwr_email_handler"
+      enabled = false
+    }
+  }
+}

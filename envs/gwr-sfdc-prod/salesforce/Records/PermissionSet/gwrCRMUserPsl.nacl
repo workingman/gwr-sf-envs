@@ -1,0 +1,14 @@
+salesforce.PermissionSet gwrCRMUserPsl {
+  description = "Denotes that the user is a Sales Cloud or Service Cloud user."
+  hasActivationRequired = false
+  label = "gwrCRM2_ps"
+  license = "CRMUserPsl"
+  userPermissions = {
+    CampaignInfluence2 = {
+      enabled = true
+      name = "CampaignInfluence2"
+    }
+  }
+  fullName = "gwrCRMUserPsl"
+  _alias = "gwrCRM2_ps"
+}

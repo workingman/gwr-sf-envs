@@ -1,0 +1,272 @@
+type salesforce.Lead {
+  salesforce.Text CurrentGenerators__c {
+    apiName = "Lead.CurrentGenerators__c"
+    externalId = false
+    label = "Current Generator(s)"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number LeadScore__c {
+    apiName = "Lead.LeadScore__c"
+    defaultValueFormula = "0.2"
+    description = "relative  probability of conversion from 0 to 1"
+    externalId = false
+    inlineHelpText = "between 0 and 1"
+    label = "LeadScore"
+    precision = 3
+    scale = 2
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Lead.NumberofLocations__c"
+    externalId = false
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Primary__c {
+    apiName = "Lead.Primary__c"
+    externalId = false
+    label = "Primary"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ProductInterest__c {
+    apiName = "Lead.ProductInterest__c"
+    externalId = false
+    label = "Product Interest"
+    valueSet = [
+      {
+        fullName = "GC1001 series_"
+        default = false
+        label = "GC1001 series_"
+      },
+      {
+        fullName = "GC5000 series"
+        default = false
+        label = "GC5000 series"
+      },
+      {
+        fullName = "GC3000 series"
+        default = false
+        label = "GC3000 series"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SICCode__c {
+    apiName = "Lead.SICCode__c"
+    externalId = false
+    label = "SIC Code"
+    length = 15
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist npe01__Preferred_Email__c {
+    apiName = "Lead.npe01__Preferred_Email__c"
+    deprecated = false
+    externalId = false
+    label = "Preferred Email"
+    valueSet = [
+      {
+        fullName = "Personal"
+        default = false
+        label = "Personal"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Alternate"
+        default = false
+        label = "Alternate"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npe01
+      },
+    ]
+  }
+  salesforce.Picklist npe01__Preferred_Phone__c {
+    apiName = "Lead.npe01__Preferred_Phone__c"
+    deprecated = false
+    externalId = false
+    label = "Preferred Phone"
+    valueSet = [
+      {
+        fullName = "Home"
+        default = false
+        label = "Home"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Mobile"
+        default = false
+        label = "Mobile"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npe01
+      },
+    ]
+  }
+  salesforce.Lookup npsp__Batch__c {
+    apiName = "Lead.npsp__Batch__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The batch this lead was created from."
+    label = "Batch"
+    referenceTo = [
+      "npsp__Batch__c",
+    ]
+    relationshipLabel = "Leads"
+    relationshipName = "Leads"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Text npsp__CompanyCity__c {
+    apiName = "Lead.npsp__CompanyCity__c"
+    deprecated = false
+    externalId = false
+    label = "Company City"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Text npsp__CompanyCountry__c {
+    apiName = "Lead.npsp__CompanyCountry__c"
+    deprecated = false
+    externalId = false
+    label = "Company Country"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Text npsp__CompanyPostalCode__c {
+    apiName = "Lead.npsp__CompanyPostalCode__c"
+    deprecated = false
+    externalId = false
+    label = "Company Zip/Postal Code"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Text npsp__CompanyState__c {
+    apiName = "Lead.npsp__CompanyState__c"
+    deprecated = false
+    externalId = false
+    label = "Company State/Province"
+    length = 255
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.TextArea npsp__CompanyStreet__c {
+    apiName = "Lead.npsp__CompanyStreet__c"
+    deprecated = false
+    externalId = false
+    label = "Company Street"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+}

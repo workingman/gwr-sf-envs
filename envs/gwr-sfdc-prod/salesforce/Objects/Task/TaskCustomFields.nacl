@@ -1,0 +1,34 @@
+type salesforce.Task {
+  salesforce.Lookup npsp__Engagement_Plan_Task__c {
+    apiName = "Task.npsp__Engagement_Plan_Task__c"
+    relationshipName = "npsp__Engagement_Plan_Task__r"
+    referenceTo = [
+      "npsp__Engagement_Plan_Task__c",
+    ]
+    label = "Engagement Plan Task"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+  salesforce.Lookup npsp__Engagement_Plan__c {
+    apiName = "Task.npsp__Engagement_Plan__c"
+    relationshipName = "npsp__Engagement_Plan__r"
+    referenceTo = [
+      "npsp__Engagement_Plan__c",
+    ]
+    label = "Engagement Plan"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.npsp
+      },
+    ]
+  }
+}

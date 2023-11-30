@@ -1,0 +1,29 @@
+salesforce.PermissionSet gwrNewPermissionSet {
+  description = "GWR additional permission set"
+  hasActivationRequired = false
+  label = "gwrNewPermissionSet"
+  license = "Salesforce"
+  objectPermissions = {
+    Case = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Case
+      viewAllRecords = false
+    }
+  }
+  userPermissions = {
+    CanAccessCE = {
+      enabled = true
+      name = "CanAccessCE"
+    }
+    EditCaseComments = {
+      enabled = true
+      name = "EditCaseComments"
+    }
+  }
+  fullName = "gwrNewPermissionSet"
+  _alias = "gwrNewPermissionSet"
+}
